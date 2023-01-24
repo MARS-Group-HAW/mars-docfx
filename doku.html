@@ -1,0 +1,937 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Getting started with MARS | MARS LIFE Runtime System </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Getting started with MARS | MARS LIFE Runtime System ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="images/mars/mars-icon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="images/mars/mars-icon-resized.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="articles/about_mars.html" title="Documentation">Documentation</a>
+                      </li>
+                      <li>
+                          <a href="simulation/Mars.Core.html" title="Core API">Core API</a>
+                      </li>
+                      <li>
+                          <a href="soh/SOHBicycleModel.Common.html" title="SmartOpenHamburg API">SmartOpenHamburg API</a>
+                      </li>
+                      <li>
+                          <a href="components/Mars.Components.html" title="Model Components API">Model Components API</a>
+                      </li>
+                      <li>
+                          <a href="common/Mars.Common.html" title="Common API">Common API</a>
+                      </li>
+                </ul>            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="getting-started-with-mars">Getting started with MARS</h1>
+
+<p>The <strong>MARS runtime system</strong> provides agent-based simulation and
+geographical query processing methods with a set of standard
+mathematical functions and data structures for <a href="https://dotnet.microsoft.com/download/dotnet-core/3.1">.NET
+Core</a>.</p>
+<p>The framework provides simulation core to execute the simulation with
+variable step-size. It is compatible with multiple platforms including
+<strong>Microsoft Windows</strong>, <strong>MacOS</strong>, <strong>Xamarin</strong>, <strong>Unity3D</strong>, <strong>Windows
+Store applications</strong>, <strong>Linux</strong> or <strong>mobile</strong>.</p>
+<blockquote><p>The framework offers a unified API to develop and execute
+individual-based models and scenarios.</p>
+</blockquote>
+<h2 id="concepts">Concepts</h2>
+<p>A simulation is the execution of a model (representation of a system) in
+a predefined scenario. The scenario consists of configurations of
+certain aspects like the simulation time frame (start and endpoint) or
+the tick size (in our tick-based-system every tick represents a time
+frame; the simulation is executed tick by tick) or the number of
+involved agents, and input data that is used in the model to initialize
+or update agents, entities and layers. Every scenario, therefore,
+consists of a model description that defines which parts of the model
+are part of the scenario (e.g. which layers and agents are involved) and
+the mentioned simulation config. The model is described by the concept
+of agents, entities and layers.</p>
+<p><a href="../basic-concepts/agent.md">Agents</a> are independent and active
+components that can sense surroundings and act upon these findings and
+their internal state (memory, goals, desires, ..).</p>
+<p><a href="../basic-concepts/entity.md">Entities</a> are like agents components with
+a life-cycle (they are created initially, initialized with data and
+eventually removed from the simulation later). Unlike agents, they
+cannot act. They, therefore, represent model objects that exist in the
+model and can be used by the agent.</p>
+<p><a href="../basic-concepts/layers.md">Layers</a> could be described as playgrounds
+of the simulation if you would describe agents as players. They provide
+information for certain aspects of the model and can be used by agents
+to acquire tempo-spatial data or provide an interface for exploring
+entities or other agents. There is a specific bond between agents and
+their main layer, initially provided to the agent on initialization.
+This layer may be responsible for creating the agent with an
+<code>AgentManager</code>. ## Sample Model: Wolf-Sheep-Predation</p>
+<p>Check out the
+<a href="https://git.haw-hamburg.de/mars/model-deployments/-/tree/master/C%23%20Models/model-wolf-sheep">Wolf-Sheep-Model</a>
+to make yourself familiar with the <a href="../basic-concepts/model.md">basic
+concepts</a>, like
+<a href="../basic-concepts/layers.md">layers</a> and
+<a href="../basic-concepts/agent.md">agents</a>.</p>
+<p>The folder <code>WolfSheepPredation</code> contains a simple predation model in
+which sheep and wolves move on a grid. <code>Sheep</code> eat grass and
+periodically increased by a <code>GrassGrowthAgent</code>). <code>Wolf</code> hunt sheep and
+eat them if close enough. Both animals reproduce eventually by losing
+half their energy. Energy is also consumed in every tick and can be
+replenished by eating food. If the energy is zero, the animal dies.</p>
+<p>The following tutorial video explains the relevant aspects of that model
+in more detail: > [!Video https://www.youtube.com/embed/QmOmuCkAXUg]</p>
+<blockquote><p>[!Video https://www.youtube.com/embed/GEUd4b2-Eq4]</p>
+</blockquote>
+<p>The repository also contains a second folder <code>WolfSheepGrassPredation</code>
+that promotes <code>Grass</code> to an own agent type that can vary in growth.
+Further concepts are introduced and are explained in a second tutorial
+video.</p>
+<p><code>These are for adept users and can be skipped for beginners.</code></p>
+<blockquote><p>[!Video
+https://www.youtube.com/embed/videoseries?list=PLWC-U16t1JAgiuAHNumPjHPvLr4fNLdRM]</p>
+</blockquote>
+<p>The design concepts can be found in the <code>Design</code>-folder.</p>
+<h2 id="getting-started-with-your-own-model">Getting started with your own model</h2>
+<p>To install the framework in your application, please use the public
+<code>nuget</code> feed from Microsoft and is compatible with <code>netstandard2.0</code>. It
+is designed to use with <code>netcore</code>. The runtime system is available as a
+public NuGet package and simply be added to your project using the
+<code>dotnet</code> CLI or your preferred IDE:</p>
+<pre><code class="lang-bash">dotnet add package Mars.Life.Simulations
+</code></pre><blockquote><p>Optional when you are using the IDE: * If you are using Visual
+Studio, right-click on the <strong>References</strong> item in your solution
+folder, and select <strong>Manage NuGet Packages</strong>. * If you are using
+Jetbrains Rider, click on NuGet package management below.</p>
+<p>Search for <code>Mars.Life.Simulations</code> (<a href="https://www.nuget.org/packages/Mars.Life.Simulations/">or equivalently
+Mars</a>) and
+select &quot;Install.&quot;</p>
+</blockquote>
+<p>You can also <a href="https://git.haw-hamburg.de/mars/model-deployments/-/tree/master/C%23%20Models/getting_started">checkout this simple model
+stub</a>
+that provides the required model structure and MARS dependencies.</p>
+<p>Further examples are provided for a simple
+<a href="https://git.haw-hamburg.de/mars/model-deployments/-/tree/master/C%23%20Models/Grid_Test%20CS">Grid-model</a>
+and a simple
+<a href="https://git.haw-hamburg.de/mars/model-deployments/-/tree/master/C%23%20Models/Geo_Test%20CS">Geo-model</a>.</p>
+<h2 id="definition-of-agents">Definition of Agents</h2>
+<p>Along with <a href="layers.md">layers</a>, agents are the main part of every model.
+Once the layers have been created, agent types can be specified. For
+this step, the modeler needs to know what each agent type is going to
+be, what attributes define it, and what its actions will look like. Once
+this has been established, the agent type creation can be started.</p>
+<p>Agents are the central part of the MARS simulation, which can be viewed
+as an information system with three phases. First, there is some kind of
+input data that is integrated in the model, either in layer or agent.
+The model execution is then performed and generates output data in
+different formats for analyzation.</p>
+<p><img src="../../../images/docu/mars_simulation_system.png" alt="MARS simulation as information
+system"></p>
+<p>A more detailed view on the system emphasises that the input files are
+described in the <a href="../model-configuration/index.md">simulation config</a>.
+The input data is used to initialize certain properties of the agent,
+which may afterwards finalize the initialization process with model
+code. The model execution ticks the agent in every time step. The output
+is created automatically by the system. Output formats as well as filter
+criteria need to be defined in the simulation config. To analyze the
+results, as for now, external tools are required.</p>
+<p><img src="../../../images/docu/agent_lifecycle.png" alt="MARS simulation as information
+system"></p>
+<h2 id="implementation-of-agents">Implementation of Agents</h2>
+<p>Agent types are defined by implementing the <code>IAgent&lt;TLayer&gt;</code> interface.
+The <code>IAgent&lt;TLayer&gt;</code> interface expects the implementation of the
+<code>Init(TLayer)</code> and the <code>Tick()</code> method as well as a unique identifier in
+form of a UUID (Guid) which has to be assigned by the <code>ID</code> property.</p>
+<p>The agent and entity contract is structured as follows:</p>
+<pre><code class="lang-plantuml">interface IModelObject {
+}
+
+interface IEntity {
+}
+IModelObject &lt;|-- IEntity
+IEntity --&gt; &quot;ID&quot; Guid
+
+interface ITickClient {
+    Tick() : void
+}
+IModelObject &lt;|-- ITickClient
+
+interface IAgent {
+}
+ITickClient &lt;|-- IAgent
+IEntity &lt;|-- IAgent
+</code></pre><p>In the model code a <code>using</code> import for the namespace
+<code>Mars.Components.Agents</code> must be added:</p>
+<pre><code class="lang-c#">using Mars.Components.Agents;
+</code></pre><p>An agent definition may look like this.</p>
+<pre><code class="lang-c#">
+using Mars.Components.Agents;
+
+public class MyAgentType : IAgent&lt;MyLayer&gt; 
+{
+    public void Init(MyLayer layer) 
+    {
+        // finalize the init process
+    }
+
+    public void Tick() 
+    {
+        // define your logic here
+    }
+
+    public Guid ID { get; set; }
+}
+</code></pre><p>Each agent type, which shall be available for the scenario configuration
+have to be registered within the <code>ModelDescription</code>.</p>
+<p>Use method <code>AddAgent&lt;TAgentType, TLayerType&gt;()</code> expects therefore the
+connection of the agents to its responsible layer:</p>
+<pre><code class="lang-c#">// Define the description when not already happened
+// var description = new ModelDescription();
+
+// Register the agent type before adding the agent type.
+description.AddLayer&lt;MyLayerType&gt;();
+
+description.AddAgent&lt;MyAgentType, MyLayerType&gt;();
+</code></pre><p>When each agent type is registered, the type and their parameter can be
+used within the <a href="../model-configuration/agent_config.md">scenario
+configuration</a>.</p>
+<blockquote><p>Note that the respective layer type must be registered to the
+<code>ModelDescription</code> beforehand.</p>
+</blockquote>
+<h2 id="passing-input-to-the-agent">Passing input to the Agent</h2>
+<p>To initialize agents or entities with given inputs the <code>IAgentManager</code>
+or the <code>IEntityManager</code> is used. Both components read the scenario
+configuration and use the mapping to create objects from it.</p>
+<p>For example, to use the <code>IAgentManager</code>, a layer (more on defining
+layers <a href="layers.md">here</a>) can be used to load the component that
+provides the <code>IAgentManager</code> interface, for example inside the
+<code>InitLayer()</code> method:</p>
+<pre><code class="lang-c#">
+public class MyAgentLayer : AbstractLayer 
+{
+    public override bool InitLayer(TInitData layerInitData, RegisterAgent registerAgentHandle, UnregisterAgent unregisterAgentHandle)
+    {
+        base.InitLayer(layerInitData, registerAgentHandle, unregisterAgentHandle);
+        // Resolve the required model component.
+        var agentManager = layerInitData.Container.Resolve&lt;IAgentManager&gt;();
+
+        // Create and register objects of type MyAgentType.
+        var agents = agentManager.Spawn&lt;MyAgentType&gt;();
+
+        // Otherwise only create them but do not registering 
+        // to trigger their Tick() method. 
+        var nonRegisteredAgents = agentManager.Create&lt;MyAgentType&gt;().ToList();
+
+        return true;
+    }
+}
+</code></pre><p>The <code>Spawn&lt;MyAgentType&gt;()</code> call creates and registers a set of agents
+from the configuration, unless otherwise specified in the call, and uses
+the mapping to assign properties of each <code>MyAgentType</code> object with the
+desired value.</p>
+<blockquote><p>The number of agents is defined in the configuration via the <code>count</code>
+switch.</p>
+</blockquote>
+<p>❗❗❗ The <code>Spawn&lt;MyAgentType&gt;()</code> call returns an <strong>iterator for
+creating and registering</strong> objects. The <a href="https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/concepts/linq/">.NET Language Integrated Query
+(LINQ)</a>
+technology allows subsequent queries on the set of objects before they
+are actually created. Only when <code>ToList()</code> is iterated or called do the
+statements actually pass through.</p>
+<p>Using <code>PropertyDescription</code> annotation for those parameters of an agent
+or entity which shall be assigned with input data from outside.
+Properties must be publicly visible and have both a <code>get</code> (getter) and
+<code>set</code> (setter) to allow values to be written.</p>
+<pre><code class="lang-c#">public class MyAgentType : IAgent&lt;MyLayer&gt; 
+{
+    [PropertyDescription]
+    public double InputProperty { get; set; }
+
+
+
+    public void Init(MyLayer layer) { }
+
+    public void Tick() 
+    {
+        // do something with the input
+        Console.WriteLine(InputProperty);
+    }
+
+    public Guid ID { get; set; }
+} 
+</code></pre><p>The <code>PropertyDescription</code> is used to mark properties of a type to make
+this a scenario configuration (described
+<a href="../model-configuration/agent_config.md">here</a>) externally visible.</p>
+<p>Inside the <code>mappings</code> a value or indirection mapping can be done via the
+name of the model element (here <code>InputProperty</code>).</p>
+<h3 id="direct-value-assignment">Direct value assignment</h3>
+<p>Values for properties can be assigned to instances of a type directly in
+the configuration. A direct assignment assigns the property via a name
+(here <code>InputProperty</code>) with a desired value that conforms to the typing
+of the property (<code>double</code>-precision value of <code>InputProperty</code>).</p>
+<pre><code class="lang-json">{
+  &quot;name&quot;: &quot;MyAgentType&quot;,
+  &quot;mappings&quot;:[
+    {&quot;name&quot;: &quot;InputProperty&quot;, &quot;value&quot;: 3.141 } 
+  ]
+}
+</code></pre><p>The system tries to convert the input to the type automatically, so
+other input such as value written as <code>&quot;3.14&quot;</code> are also possible.
+However, if the input does not conform to the given type, an exception
+is raised. For example, the <code>InputProperty</code> which is typed as <code>double</code>
+is assigned the value <code>true</code>:</p>
+<pre><code class="lang-json">{
+  &quot;name&quot;: &quot;MyAgentType&quot;,
+  &quot;mappings&quot;:[
+    {&quot;name&quot;: &quot;InputProperty&quot;, &quot;value&quot;: true } 
+  ]
+}
+</code></pre><p>Then the system throws the following exception:</p>
+<blockquote><p>❗❗❗ The type &#39;Double&#39; for property &#39;InputProperty&#39; is not
+compatible with input &#39;True&#39;.</p>
+</blockquote>
+<h3 id="indirect-value-assignment">Indirect value assignment</h3>
+<p>An <code>&lt;emp&gt;</code>{=html}indirect value assignment<code>&lt;/emp&gt;</code>{=html} allows to
+initialize each instance of an agent with its individual data objects.
+These data objects are stored in a file (for instance a csv-file), which
+is assigned to the agent type in the simulation config. A given source
+(here <code>myAgentType.csv</code>) contains <em>x</em> data objects (rows, without header
+row). Each data row represents one agent instance:</p>
+<p>  fieldNameInCsv   anotherField</p>
+<hr>
+<p>  0.481            gold
+  1.482            silver
+  79.13            copper
+  100.48           platinum</p>
+<p>The attribute <code>fieldNameInCsv</code> of the input <code>myAgentType.csv</code> <strong>does
+not</strong> correspond to the name <code>InputProperty</code> of the model object. To
+access the values of the field, the field name must be specified to
+<em>redirect</em> the access reading the source:</p>
+<pre><code class="lang-json">{
+  &quot;name&quot;: &quot;MyAgentType&quot;,
+  &quot;file&quot;: &quot;myAgentType.csv&quot;,
+  &quot;mappings&quot;:[
+    {&quot;name&quot;: &quot;InputProperty&quot;, &quot;field&quot;: &quot;fieldNameInCsv&quot; }
+  ]
+}
+</code></pre><h3 id="alternative-names">Alternative names</h3>
+<p>Instead of the property name from the model (here <code>InputProperty</code>) a
+field <code>Name</code> with an alternative attribute name can be specified at the
+<code>PropertyDescription</code>.</p>
+<pre><code class="lang-c#">public class MyAgentType : IAgent&lt;MyLayer&gt; 
+{
+    [PropertyDescription(Name = &quot;myOtherName&quot;]
+    public double InputProperty { get; set; }
+} 
+</code></pre><p>Mapping of values can now be specified via <code>MyInputProperty</code> and
+<code>myOtherName</code>:</p>
+<pre><code class="lang-json">{
+  &quot;name&quot;: &quot;MyAgentType&quot;,
+  &quot;mappings&quot;:[
+    {&quot;name&quot;: &quot;myOtherName&quot;, &quot;value&quot;: 3.141 }
+  ]
+}
+</code></pre><h3 id="required-properties">Required properties</h3>
+<p>Models that define parameters that <strong>must be externally mapped</strong> can
+specify this requirement as <code>Required</code> in <code>PropertyDescription</code>. To
+initialize an object, there must then be a mapping for the respective
+annotated properties, otherwise the system throws an exception.</p>
+<pre><code class="lang-c#">public class MyAgentType : IAgent&lt;MyLayer&gt; 
+{
+    [PropertyDescription(Required = true)]
+    public double InputProperty { get; set; }
+} 
+</code></pre><h2 id="definition-of-entities">Definition of Entities</h2>
+<p>In contrast to agents, entities are pure objects without a <code>Tick()</code>
+method. However, entities are also identified by a UUID (Guid) <code>ID</code> and
+can be included in the model to enter other data that is not directly
+part of the agent parameterization. Entity are versioned and snapshots
+are persisted just the same as with agents.</p>
+<p>In your model code, add a <code>using Mars.Interfaces.Agents</code> to make the
+namespace directly available.</p>
+<pre><code class="lang-c#">using Mars.Interfaces.Agents
+</code></pre><p>Create a class (called e.g., <code>MyEntityType</code>) and implement the <code>IEntity</code>
+interface</p>
+<pre><code class="lang-c#">public class MyEntityType : IEntity 
+{
+    public Guid ID { get; set; }
+}
+</code></pre><p>Alternatively you can infer directly from <code>AbstractEntity</code>, available in
+<code>Mars.Components.Agents</code>.</p>
+<h3 id="registering-the-type">Registering the type</h3>
+<p>Entities must be made known in the model, so that they can be
+initialized by a given simulation configuration. In the entry point
+<code>Main()</code>, the newly defined entity type must be registered within the
+<code>ModelDescription</code>.</p>
+<pre><code class="lang-c#">// Define the description is not already happened
+// var description = new ModelDescription();
+
+description.AddEntity&lt;MyEntityType&gt;()
+</code></pre><h3 id="create-instance-from-input">Create instance from input</h3>
+<p>Entities can be loaded into the model by using the <code>IEntityManager</code>
+component to create instances by a given key attribute name and the
+corresponding value.</p>
+<blockquote><p>The <code>IEntityManager</code> component can be resolved using the global
+simulation container <code>ISimulationContainer</code>. When the <code>AbstractLayer</code>
+implementation is used (as described in <a href="layers.md">layer definition</a>)
+the <code>IEntityManager</code> is already accessible. Otherwise the components
+needs to be resolved as follows:</p>
+</blockquote>
+<pre><code class="lang-c#">var manager = container.Resolve&lt;IEntityManager&gt;();
+</code></pre><p>An agent can create concrete entities directly and bind them to itself:</p>
+<pre><code class="lang-c#">var entity = manager.Create&lt;MyAgentType&gt;(&quot;keyField&quot;, &quot;keyValue&quot;);
+</code></pre><h3 id="basic-concepts">Basic Concepts</h3>
+<ul>
+<li><p><a href="multi-agent-simulation.md">Multi-Agent-Simulation</a>: What is a
+multi-agent system.</p>
+</li>
+<li><p><a href="agent.md">Agent Definition</a>: Explains the agent model type.</p>
+</li>
+<li><p><a href="layers.md">Layers Definition</a>: Explains the layer model type.</p>
+</li>
+<li><p><a href="entity.md">Entity Definition</a>: Explains the entity model type.</p>
+</li>
+<li><p><a href="environments.md">Network</a>: Explains the environment type.</p>
+</li>
+<li><p><a href="spawning.md">Spawning and Killing</a>: Explains the concept to spawn
+agents or to kill agents.</p>
+</li>
+</ul>
+<h2 id="definition-of-layer">Definition of Layer</h2>
+<p>Layers represent the <code>&lt;em&gt;</code>{=html}environment<code>&lt;/em&gt;</code>{=html} in which
+agents <code>&lt;em&gt;</code>{=html}live<code>&lt;/em&gt;</code>{=html}. They serve as surrounding for
+their dependent agents. In this context, they are responsible to create
+their agents. Do not confuse layers with the
+<a href="environments"><code>Environment</code>-type</a> that is a data structure that is used
+for moving and exploring spatial objects (<a href="agent">agents</a> and
+<a href="entity">entities</a>). A layer may however use an environment that is used
+by its agents.</p>
+<p>Moreover, layers may hold and provide data, depending on their type.
+They offer possibilities for input of various data formats (<a href="../data-sources/index.md">see more
+information about possible inputs</a>).</p>
+<p>Layers are the central model element in a MARS model and are
+automatically generated by the MARS runtime system and mutual
+dependencies between different layers are resolved. They require to be
+registered in the <a href="model">model description</a>.</p>
+<p>In MARS, the following layers are distinguished * <a href="#basic-layer">Basic
+Layer</a> * Layers with dependencies or activity *
+<a href="#dependent-layer">Dependent Layer</a> * <a href="#active-layer">Active Layer</a> *
+Data Layer * <a href="#vector-layer">Vector Layer</a> * <a href="#raster-layer">Raster
+Layer</a></p>
+<p>The layer <code>ILayer</code> contract is structured as follows:</p>
+<pre><code class="lang-plantuml">interface IModelObject {
+}
+
+interface ILayer {
+    InitLayer(layerInitData:TInitData, registerAgentHandle:RegisterAgent, unregisterAgentHandle:UnregisterAgent) : bool
+    GetCurrentTick() : long
+    SetCurrentTick(currentStep:long) : void
+}
+IModelObject &lt;|-- ILayer
+
+interface IDataLayer {
+}
+ILayer &lt;|-- IDataLayer
+</code></pre><h3 id="basic-layer">Basic Layer</h3>
+<p>To define a layer the <code>ILayer</code> interface must be implemented <strong>or</strong>
+inherited from the existing abstract implementation <code>AbstractLayer</code>.</p>
+<p>In the model code, a <code>using</code> import for the namespace
+<code>Mars.Components.Layers</code> must be added to the own model file.</p>
+<pre><code class="lang-c#">using Mars.Components.Layers;
+</code></pre><p>Then a new layer type can be defined in the form of a class that
+inherits from the abstract class <code>AbstractLayer</code>:</p>
+<pre><code class="lang-c#">public class MyLayer : AbstractLayer
+{
+        public override bool InitLayer(TInitData layerInitData, RegisterAgent registerAgentHandle, UnregisterAgent unregisterAgentHandle)
+    {
+        base.InitLayer(layerInitData, registerAgentHandle, unregisterAgentHandle);
+        // Do your initialization logic here.
+        return true;
+    } 
+}
+</code></pre><p>The <code>InitLayer</code> method can be used to execute custom logic, to
+initialize <a href="environments.md">Environments</a> or to
+<a href="agent_spawning.md">Spawning</a> agents.</p>
+<blockquote><p>Please note to call the base implementation
+<code>base.InitLayer(layerInitData, registerAgentHandle, unregisterAgentHandle);</code>
+to ensure correct initialization along the class hierarchy.</p>
+</blockquote>
+<p>Layer needs to be registered in the <code>ModelDescription</code> by calling the
+<code>AddLayer&lt;TLayer&gt;()</code> in your entry point <code>Main()</code> method, to be an
+active part of the simulation. Active means here that the layer will be
+managed (initialized and referenced in other active entities) by the
+MARS framework.</p>
+<pre><code class="lang-c#">private static void Main(string[] args)
+{
+ var description = new ModelDescription();
+ description.AddLayer&lt;MyLayer&gt;();
+ //...
+}
+</code></pre><hr>
+<h3 id="dependent-layer">Dependent Layer</h3>
+<p>If layers needs references to other layer for object and direct agent
+interaction or just to access data layer, the definition of dependent
+layers is necessary. Dependent layers are acquired by defining the layer
+instance as a <strong>property</strong>. MARS resolves this dependency by using
+<code>PropertyInjection</code> to <strong>automatically</strong> and assigns the dependent layer
+to this property.</p>
+<blockquote><p>Cyclic dependencies between Layer can be defined as well, but this is
+an indication for a bad conceptual design.</p>
+</blockquote>
+<pre><code class="lang-c#">public class MyLayer : AbstractLayer
+{
+    [PropertyDescription]
+    public MyDependentLayer DependentLayer { get; set; }
+}
+</code></pre><hr>
+<h3 id="active-layer">Active Layer</h3>
+<p>If the layer requires to act within the simulation, it can be made
+active, which provides the possibility to act before, after and within
+the tick. The interface <code>ISteppedActiveLayer</code> will get ticked by the
+LayerContainer, just as the average ITickClient. In Addition it provides
+to more methods which allow to hook into the moment just before and
+after a tick.</p>
+<pre><code class="lang-c#">public class MyLayer : ISteppedActiveLayer
+{
+        public void Tick()
+        {
+            //do something this tick
+        }
+
+        public void PreTick()
+        {
+            //do something bevore the tick
+        }
+
+        public void PostTick()
+        {
+            //do something after the tick
+        }
+}
+</code></pre><p>The base implementation of the <code>ISteppedActiveLayer</code> interface is the
+<code>AbstractActiveLayer</code> where each step phase (pre, tick, post) can be
+override and activated for a stepwise behaviour on a layer type.</p>
+<hr>
+<h3 id="data-layer">Data Layer</h3>
+<p>There are different layer types provides, to integrate data into the
+model and make it available for agents. To represent spatial components
+of the model MARS offers raster and vector layers, which can be used to
+represent the simulation world under consideration (e.g. temperatures,
+landscapes, buildings, roads, passive objects). All layers can be found
+in the package <code>Mars.Components.Layers</code>.</p>
+<p>In the model code a <code>using</code> import for the namespace
+<code>Mars.Components.Layers</code> must be added to the own model file, if not
+already done.</p>
+<pre><code class="lang-c#">using Mars.Components.Layers;
+</code></pre><h4 id="raster-layer">Raster Layer</h4>
+<p><code>&lt;a name=&quot;raster_layer&quot;&gt;</code>{=html}<code>&lt;/a&gt;</code>{=html}</p>
+<p>Raster layer and grid layer are able to process grid and raster data and
+can be viewed similar to a 2D matrix. Real numerical values are stored
+in a n x m matrix and have a certain semantic nominal value.</p>
+<p>The <code>IRaster</code> contract provides the following functionalities:</p>
+<pre><code class="lang-plantuml">interface IRaster {
+    CalculateStatistics() : void
+}
+interface &quot;IRaster`1&quot;&lt;TValue&gt; {
+    CurrentBand : int &lt;&lt;get&gt;&gt;
+    NumBands : int &lt;&lt;get&gt;&gt;
+    Width : int &lt;&lt;get&gt;&gt;
+    Height : int &lt;&lt;get&gt;&gt;
+    CellHeight : double &lt;&lt;get&gt;&gt; &lt;&lt;set&gt;&gt;
+    CellWidth : double &lt;&lt;get&gt;&gt; &lt;&lt;set&gt;&gt;
+    StartColumn : int &lt;&lt;get&gt;&gt;
+    StartRow : int &lt;&lt;get&gt;&gt;
+    EndColumn : int &lt;&lt;get&gt;&gt;
+    EndRow : int &lt;&lt;get&gt;&gt;
+    NoDataValue : double &lt;&lt;get&gt;&gt; &lt;&lt;set&gt;&gt;
+    Maximum : double &lt;&lt;get&gt;&gt;
+    Mean : double &lt;&lt;get&gt;&gt;
+    Minimum : double &lt;&lt;get&gt;&gt;
+    ReadBlock(xOff:int, yOff:int, sizeX:int, sizeY:int) : IRaster&lt;TValue&gt;
+    WriteBlock(blockValues:IRaster&lt;TValue&gt;, xOff:int, yOff:int, xSize:int, ySize:int) : void
+}
+&quot;IRaster`1&quot; &quot;&lt;double&gt;&quot; &lt;|-- IRaster
+&quot;IRaster`1&quot; --&gt; &quot;LowerLeft&quot; Position
+&quot;IRaster`1&quot; --&gt; &quot;UpperRight&quot; Position
+
+interface IRasterLayer {
+    GetValueByGeoPosition(coordinate:Position) : double
+    GetValueByGridPosition(coordinate:Position) : double
+}
+IDataLayer &lt;|-- IRasterLayer
+IRaster &lt;|-- IRasterLayer
+IDataSet &lt;|-- IRasterLayer
+</code></pre><p><img src="../../../images/docu/perfect_raster_hammerpark.png" alt="HammerparkRaster">
+The raster above shows a sample black area which is associated to
+concrete pixel value. This value can be used to solve problems such as,
+<em>querying a coordinate around the park</em>.</p>
+<p>To define a grid layer a new layer must inherit from the abstract
+<code>RasterLayer</code>:</p>
+<pre><code class="lang-c#">public class MyRasterLayer : RasterLayer
+{
+
+}
+</code></pre><p>The raster layer offers various operations for processing matrix data
+and allows e.g. k-NN <code>Explore</code> queries for nearby cells and coordinates
+whose nuclei match a condition.</p>
+<p>The <code>explore</code> is used to query all raster cells that are within a
+<code>radius</code> and match a selection criterion.</p>
+<pre><code class="lang-c#">MyRasterLayer MyRaster { get; set; }
+...
+var source = Position.CreatePosition(30,40);
+var result MyRaster.Explore(source, 10, 5);
+</code></pre><p>The call <code>Explore(source, 10, 5)</code> returns a sequence of the first <code>5</code>
+cells with their values that are within the <code>radius</code> of 10 steps
+starting from coordinate <code>(30,40)</code>.</p>
+<blockquote><p>Please note that the semantic of the <code>radius</code> you specify for the
+<code>Explore</code> depends on the distance function used within the
+<code>raster-layer</code> (<code>Haversine</code> with <code>meter</code> for Geospatial, <code>Chebyshev</code>
+for Grid).</p>
+</blockquote>
+<p>A fourth argument can be used to <em>optionally</em> define a selection
+predicate to search for specific cells that meet a condition.</p>
+<pre><code class="lang-c#">MyRasterLayer MyRaster { get; set; }
+...
+var source = Position.CreatePosition(30,40);
+var result MyRaster.Explore(source, 10, -1, cell =&gt; cell &gt; 10);
+</code></pre><p>The call <code>Explore(source, 10, 5, cell =&gt; cell &gt; 10)</code> queries for all
+cells (<code>-1</code>) in the radius ofn <code>10</code> whose cell value is greater than
+<code>10</code>.</p>
+<h4 id="vector-layer">Vector Layer</h4>
+<p>Vector layers are used to map vector objects that can be represented by
+points, lines or areas. Vector objects are the most commonly used types
+for modeling the simulated environment.
+<img src="../../../images/docu/vector_hammerpark.png" alt="HammerparkRaster"> The
+vector layer above shows an example vector layer, building the closed
+area to represent the park to solve problems such as <em>Checking for
+position, whether they are inside the park or not</em>.\
+To define a vector layer, a new layer must inherit from the abstract
+VectorLayer:</p>
+<p>The <code>IVectorLayer</code> contract is providing the following functionalities:</p>
+<pre><code class="lang-plantuml">
+interface IVectorLayer {
+    SerializeJson() : string
+    SerializeFeaturesJson() : IEnumerable&lt;string&gt;
+}
+interface &quot;IVectorLayer`1&quot;&lt;T&gt; {
+    CurrentTsIndex : int &lt;&lt;get&gt;&gt;
+    GetClosestPoint(gpsCoordinate:Position, maxDistance:double, predicate:Func&lt;T, bool&gt;) : Position
+    Distance(featureIndex:int, coords:IEnumerable&lt;Position&gt;) : double
+    IsPointInside(coordinate:Position) : bool
+    IsMultiPointInside(coords:IEnumerable&lt;Position&gt;) : bool
+    IsLineStringInside(coords:IEnumerable&lt;Position&gt;) : bool
+    IsMultiPointCrossing(coords:IEnumerable&lt;Position&gt;) : bool
+    IsLineStringCrossing(coords:IEnumerable&lt;Position&gt;) : bool
+    IsMultiPointIntersecting(coords:IEnumerable&lt;Position&gt;) : bool
+    IsLineStringIntersecting(coords:IEnumerable&lt;Position&gt;) : bool
+    IsMultiPointOverlapping(coords:IEnumerable&lt;Position&gt;) : bool
+    IsLineStringOverlapping(coords:IEnumerable&lt;Position&gt;) : bool
+    GetAccumulatedPathRating(source:Position, target:Position, distance:int) : double
+    GetAccumulatedPathRating(source:Position, distance:int, bearing:double) : double
+    GetTimeseriesDataForCurrentTick() : object
+    GetFromDataTable(featureId:int, key:string) : object
+    AddToDataTable(featureId:int, key:string, value:object) : void
+}
+class &quot;Collection`1&quot;&lt;T&gt; {
+}
+class &quot;SortedList`2&quot;&lt;T1,T2&gt; {
+}
+ILayer &lt;|-- IVectorLayer
+IVectorLayer --&gt; &quot;GeometryCollection&quot; IGeometryCollection
+IVectorLayer --&gt; &quot;Features&lt;IVectorFeature&gt;&quot; &quot;Collection`1&quot;
+IVectorLayer &lt;|-- &quot;IVectorLayer`1&quot;
+IDataLayer &lt;|-- &quot;IVectorLayer`1&quot;
+&quot;IVectorLayer`1&quot; --&gt; &quot;TimeSeriesData&lt;DateTime,double&gt;&quot; &quot;SortedList`2&quot;
+&quot;IVectorLayer`1&quot; --&gt; &quot;CoordinateReferenceSystem&quot; ICRSObject
+</code></pre><pre><code class="lang-c#">public class MyVectorLayer : VectorLayer
+{
+
+}
+</code></pre><p>Features of vector layers (points, lines, surfaces) can be individually
+abstracted by a model type in MARS. The <code>VectorLayer</code> offers a more
+abstract implementation <code>VectorLayer&lt;TFeatureType&gt;</code> for the definition
+of model types which can be initialized by concrete features from a
+vector input with data.</p>
+<p>An example for an abstract feature can look like this:</p>
+<pre><code class="lang-c#">public class MyVectorFeature : IVectorFeature
+{
+    public double MyFeatureValue { get; set; }
+
+    public void Init(IFeature feature)
+    {
+        MyFeatureValue = feature.Attributes[&quot;valueAttributeName&quot;].Value&lt;double&gt;();
+    }
+}
+</code></pre><p>If the <code>MyVectorLayer</code> is queried, concrete <code>MyVectorFeature</code> objects
+are returned and can be processed.</p>
+<pre><code class="lang-c#">myVectorLayer.Explore(new[] {9.99967, 53.55285}, 100, 10, myVectorFeature =&gt;
+{
+    return myVectorFeature.MyFeatureValue &gt; 20;
+});
+</code></pre><h2 id="model-definition">Model Definition</h2>
+<p>In order to use a model, entities, agents and layer types must be made
+known to the system.</p>
+<p>A so-called <code>ModelDescription</code> is defined in the project (for example in
+the entry point <code>Main()</code>) and all relevant types are registered.</p>
+<h3 id="registration">Registration</h3>
+<p>First, the <code>using</code> import of the namespace must be added:</p>
+<pre><code class="lang-c#">using Mars.Core.Model.Entities;
+</code></pre><p>In the program code (for example the entry point <code>Main()</code> of the
+.NetCore application) a <code>ModelDescription</code> object must be defined. This
+object contains all types that occur in the model and that can be
+parameterized externally by a <code>SimulationConfig</code>.</p>
+<pre><code class="lang-c#">
+public static void Main() 
+{
+    var description = new ModelDescription();
+
+    description.AddLayer&lt;MyLayer&gt;();
+    description.AddAgent&lt;MyAgent,MyLayer&gt;();
+
+}
+</code></pre><p>The types registered above include the self-defined agent type <code>MyAgent</code>
+and the corresponding agent layer <code>MyLayer</code>. If you want to use
+additional data in the model, you have to register the respective data
+layers additionally:</p>
+<pre><code class="lang-c#">description.AddLayer&lt;MyVectorLayer&gt;();
+description.AddLayer&lt;MyRasterLayer&gt;();
+</code></pre><blockquote><p> <code>MyLayer</code> can also be used as a data layer like <code>MyVectorLayer</code> or
+<code>MyRasterLayer</code>. The layer implements the required contract (see
+[here] (layers.md)).</p>
+</blockquote>
+<h2 id="registration-with-names">Registration with Names</h2>
+<p>By default, the defined class name (e.g. <code>MyAgent</code>) is used as the name
+within the model. Alternative names can be given during registration:</p>
+<pre><code class="lang-c#">description.AddAgent&lt;MyAgent,MyLayer&gt;(&quot;myAlternativeAgentName&quot;);
+</code></pre><p>This allows the types to be mapped using a different name within the
+configuration:</p>
+<pre><code class="lang-json">{
+  &quot;agents&quot;: [
+    {&quot;name&quot;: &quot;myAlternativeAgentName&quot;, &quot;file&quot;: &quot;anyInput.csv&quot;}
+  ]
+}
+</code></pre><h1 id="models-a-general-overview">Models: a general overview</h1>
+<p>In this article, general concepts such as model and multi-agent system
+are described. A general understanding of these concepts is essential to
+being able to design effective models and work with the <a href="../getting-started/index.md">MARS
+systems</a>.</p>
+<hr>
+<h2 id="model">Model</h2>
+<p>A model is a simplified representation of some specific aspects of
+reality. The goal is creating a model is typically to define and
+understand a concrete information system that closely resembles its
+real-world counterpart. When working with and running a model (in case
+of MARS, in the form of simulations), the obtained output data can be
+used to inform decisions in the real world.</p>
+<hr>
+<h2 id="tick-based-simulation">Tick-based simulation</h2>
+<p>Tick-based simulation are in contrast to continuous simulations divided
+into steps. These steps symbolize a time-driven progress. Every tick
+stands for an equally large time frame, which is called Δt. This time
+frame is fixed for the whole simulation, so that for example a
+simulation is progressing in steps of 1 minute. Every scenario runs for
+a defined amount of ticks. In every tick all tick-based elements (agents
+and active layers) have the possibility to act. Time-referenced
+scenarios have a start and an end time-point and a step length (Δt). The
+amount of ticks is then inferred.</p>
+<hr>
+<h2 id="multi-agent-systems">Multi-Agent Systems</h2>
+<p>Agent-based modelling derives from the field of artificial intelligence
+(AI). This simulation paradigm incorporates individuals, so-called
+agents, who interact with each other and their surroundings. The
+behavior is programmed on an individual level to follow a set of rules:
+The interactions between agents that occur as a result of individual
+behavior are studied to gain insights into collective behavior. Note
+that an agent is not restricted to be an individual but can also be a
+group, community, or other entity that acts and reacts to external
+conditions.</p>
+<p>The way of creating results bottom-up from an individual&#39;s actions
+leading to complex effect makes multi-agent modelling especially
+well-suited for research in the social sciences.</p>
+<h1 id="spawning-and-removing-agents-and-entities">Spawning and Removing Agents and Entities</h1>
+<p>To <strong>create</strong> instances of agent types and <strong>registering</strong> them at the
+runtime system to process the <code>Tick()</code>, two concepts are available:</p>
+<h3 id="creating-and-registering-single-object-using-registeragent">Creating and Registering single object using <code>RegisterAgent</code></h3>
+<p>Individual instances can be instantiated directly using <code>new</code>
+constructor expression. The instance must be registered with the runtime
+system by calling the <code>RegisterAgent</code> handle given through the
+<code>InitLayer</code> method of the <code>ILayer</code> implementation.</p>
+<pre><code class="lang-c#">public bool InitLayer(TInitData layerInitData, 
+    RegisterAgent registerAgentHandle, UnregisterAgent unregisterAgentHandle) 
+{
+    var layer = this;
+    var agent = new MyAgentType();
+
+    registerAgent(layer, agent);
+    return true;
+}
+</code></pre><p>Optionally the <code>RegisterAgent</code> handle allows to set and override the
+execution frequency (for more see
+<a href="../model-configuration/execution.md">here</a>) to specify <strong>after how many
+ticks</strong> the agent should be called again. Otherwise the registry uses
+the settings from the simulation configuration <code>config.json</code>.</p>
+<p>If an output has been specified using <code>output</code>, the object is managed
+accordingly in the output as well automatically.</p>
+<h3 id="mass-generation-using-agentmanager">Mass Generation using <code>AgentManager</code></h3>
+<p>The <code>AgentManager</code> is a service component that can be used to initialize
+agent quantities from the input.</p>
+<p>The <code>AgentManager</code> is a static class that can be referenced directly and
+offers two methods:</p>
+<ul>
+<li><code>CreateAgents&lt;Type&gt;</code>: This method creates a set of agents of the
+specified type but does not register them, so that their <code>Tick()</code>
+methods are called and their versions are managed in the output.</li>
+<li><code>SpawnAgents&lt;Type&gt;</code>: This method creates <strong>and</strong> registers the set
+of agents of the specified type.</li>
+</ul>
+<p>Spawning of agents is usually done within the <code>InitLayer</code> method of an
+<code>ILayer</code> implementation.</p>
+<pre><code class="lang-c#">public bool InitLayer(
+    TInitData layerInitData,
+    RegisterAgent registerAgentHandle, 
+    UnregisterAgent unregisterAgentHandle) 
+{
+    var layer = this;
+
+    AgentManager.SpawnAgents&lt;MyOtherAgent&gt;(
+        layerInitData.AgentInitConfigs.First(config =&gt; config.Name == &quot;MyOtherAgent&quot;), 
+        registerAgentHandle, unregisterAgentHandle, 
+        new List&lt;ILayer&gt; {layer});
+
+    return true;
+}
+</code></pre><p>Since the agent interacts with the system via its layer, it is necessary
+that the <code>AgentManager</code> is given its own layer instance as
+<strong>dependency</strong>.</p>
+<p>In the agent this dependent layer can be referenced as a property which
+is resolved by the system via <code>PropertyInjection</code>, for example as
+follows:</p>
+<pre><code class="lang-c#">public class MyAgentType : AbstractAgent 
+{
+    [PropertyDescription]
+    public MyLayerType Layer { get; set; }
+
+    public void override Tick() {
+        // access your layer here (e.g., Layer.Environment.Explore(...))
+    }
+}
+</code></pre><p>Alternatively, dependent layer can be defined directly as <strong>constructor
+parameter</strong> as showed below:</p>
+<blockquote><p>❗❗❗ Because of the <strong>testing</strong> of your own model, it is recommended
+to keep the required constructor parameters as low as possible.</p>
+</blockquote>
+<pre><code class="lang-c#">public class MyAgentType : AbstractAgent 
+{
+    public MyLayerType Layer { get; set; }
+
+    public MyAgentType(MyLayerType layer) 
+    {
+        Layer = layer;
+    }
+
+    public void override Tick() {
+        // access your layer here (e.g., Layer.Environment.Explore(...))
+    }
+}
+</code></pre><h3 id="removing-and-unregister-an-object-from-simulation">Removing and unregister an object from simulation</h3>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Documentation/doku.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>Copyright &copy MARS GROUP.<br><strong>HAW Hamburg</strong></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

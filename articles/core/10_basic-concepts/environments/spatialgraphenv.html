@@ -1,0 +1,519 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SpatialGraphEnvironment (SGE) | MARS LIFE Runtime System </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="SpatialGraphEnvironment (SGE) | MARS LIFE Runtime System ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../../../../images/mars/mars-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+  
+  <meta property="docfx:rel" content="../../../../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../images/mars/mars-icon-resized.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../../../../articles/about_mars.html" title="Documentation">Documentation</a>
+                      </li>
+                      <li>
+                          <a href="../../../../simulation/Mars.Core.html" title="Core API">Core API</a>
+                      </li>
+                      <li>
+                          <a href="../../../../soh/SOHBicycleModel.Common.html" title="SmartOpenHamburg API">SmartOpenHamburg API</a>
+                      </li>
+                      <li>
+                          <a href="../../../../components/Mars.Components.html" title="Model Components API">Model Components API</a>
+                      </li>
+                      <li>
+                          <a href="../../../../common/Mars.Common.html" title="Common API">Common API</a>
+                      </li>
+                </ul>            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="../../../dsl/index.html" title="MARS DSL Language" class="">MARS DSL Language</a>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../../core/index.html" title="MARS Runtime System" class="">MARS Runtime System</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../../core/00_getting-started/index.html" title="Getting started with MARS" class="">Getting started with MARS</a>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../core/10_basic-concepts/index.html" title="Basic Concepts" class="">Basic Concepts</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../core/10_basic-concepts/00_multi-agent-simulation.html" title="Multi-Agent-Simulation" class="">Multi-Agent-Simulation</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/10_basic-concepts/10_agent.html" title="Agents" class="">Agents</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/10_basic-concepts/20_layers.html" title="Layers" class="">Layers</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/10_basic-concepts/30_entity.html" title="Entities" class="">Entities</a>
+                                </li>
+                                <li class="">
+                                  <span class="expand-stub"></span>
+                                  <a href="../../../core/10_basic-concepts/environments/index.html" title="Environments" class="">Environments</a>
+
+                                    <ul class="nav level4">
+                                      <li class="">
+                                        <a href="../../../core/10_basic-concepts/environments/spatialhashenv.html" title="SpatialHashEnvironment" class="">SpatialHashEnvironment</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="../../../core/10_basic-concepts/environments/geohashenv.html" title="GeoHashEnvironment" class="">GeoHashEnvironment</a>
+                                      </li>
+                                      <li class="active">
+                                        <a href="../../../core/10_basic-concepts/environments/spatialgraphenv.html" title="SpatialGraphEnvironment" class="active">SpatialGraphEnvironment</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="../../../core/10_basic-concepts/environments/collisionenv.html" title="CollisionEnvironment" class="">CollisionEnvironment</a>
+                                      </li>
+                                    </ul>                                </li>
+                                <li class="">
+                                  <a href="../../../core/10_basic-concepts/model.html" title="Model Setup" class="">Model Setup</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../core/model-configuration/index.md" title="Model Configuration" class="">Model Configuration</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../core/model-configuration/agent_config.md" title="Agent and Entity Configuration" class="">Agent and Entity Configuration</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/model-configuration/layer_config.md" title="Layer Configuration" class="">Layer Configuration</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/model-configuration/output_filter.md" title="Output Filter" class="">Output Filter</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/model-configuration/sim_config_options.md" title="Simulation Configuration Options" class="">Simulation Configuration Options</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/model-configuration/sim_output_formats.md" title="Simulation Output Formats" class="">Simulation Output Formats</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../core/data-sources/index.md" title="Data Sources" class="">Data Sources</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../core/data-sources/geospatial_data_sources.md" title="Geospatial Data Sources" class="">Geospatial Data Sources</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/data-sources/geospatial_data_types.md" title="Geospatial Data Types" class="">Geospatial Data Types</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/data-sources/ascii-grid.md" title="ASCII grid (.asc)" class="">ASCII grid (.asc)</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/data-sources/csv.md" title="CSV" class="">CSV</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/data-sources/time-series.md" title="Time-series Data" class="">Time-series Data</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../core/analysis-and-visualization/index.md" title="Analysis and Visualization" class="">Analysis and Visualization</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../core/analysis-and-visualization/visualizing_agent_trips_kepler.md" title="Visualizing Agent Movement Trajectories" class="">Visualizing Agent Movement Trajectories</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/analysis-and-visualization/live_visualization.md" title="Simple Live Visualization" class="">Simple Live Visualization</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/analysis-and-visualization/visualizing_sim_results.md" title="Analyzing Output Data" class="">Analyzing Output Data</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../core/tutorials/index.html" title="Tutorials" class="">Tutorials</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../core/tutorials/create_new_mars_csharp_project.html" title="Creating a new MARS C# project" class="">Creating a new MARS C# project</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/tutorials/main_and_configs.html" title="Creating a starting point for your model" class="">Creating a starting point for your model</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/tutorials/create_vector_layer_raster_layer.html" title="Creating vector and raster layer files" class="">Creating vector and raster layer files</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/tutorials/wolf_sheep_tutorial.html" title="Building your first model (wolf-sheep-grass)" class="">Building your first model (wolf-sheep-grass)</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/help/index.md" title="Common problems and solutions" class="">Common problems and solutions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/tutorials/geo-data-acquisition.html" title="Acquire geo data for layers" class="">Acquire geo data for layers</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/tutorials/deploy_in_cloud.html" title="Build and start your model in Kubernetes cluster" class="">Build and start your model in Kubernetes cluster</a>
+                                </li>
+                              </ul>                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../../soh/index.html" title="SmartOpenHamburg" class="">SmartOpenHamburg</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../../soh/getting-started.html" title="Quick Start" class="">Quick Start</a>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../soh/scenarios/index.html" title="Ready to use scenarios (boxes)" class="">Ready to use scenarios (boxes)</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../soh/scenarios/ferry_transfer.html" title="Ferry Transfer" class="">Ferry Transfer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/scenarios/green_4_bikes.html" title="Green4Bikes" class="">Green4Bikes</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/scenarios/ferry_transfer_green4bikes_results.html" title="Results" class="">Results</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/scenarios/ferry_transfer_green4bikes_result_scheme.html" title="Result Schemas" class="">Result Schemas</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../soh/index.html" title="Layer" class="">Layer</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../soh/layers/multi_modal_layer.html" title="Multimodal Layer" class="">Multimodal Layer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/layers/modal_layer.html" title="Modal Layer" class="">Modal Layer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/layers/scheduling_layer.html" title="Scheduling Layer" class="">Scheduling Layer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/layers/vector_layer.html" title="Vector Layer" class="">Vector Layer</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../soh/index.html" title="Agents" class="">Agents</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../soh/agents.html" title="Behaviour Model" class="">Behaviour Model</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/agents/multi_modal_agent.html" title="Multimodal" class="">Multimodal</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/agents/multi_capable_agent.html" title="Multi-Capable" class="">Multi-Capable</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/steering.html" title="Multi-Modality" class="">Multi-Modality</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/agents/citizen.html" title="Citizen" class="">Citizen</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/agents/traveler.html" title="Traveler" class="">Traveler</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../soh/index.html" title="Entities" class="">Entities</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../soh/entities.html" title="Referencing" class="">Referencing</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/entities/car.html" title="Street Vehicles" class="">Street Vehicles</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/entities/bicycle.html" title="Bicycle Vehicles" class="">Bicycle Vehicles</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/entities/ferry.html" title="Ferry" class="">Ferry</a>
+                                </li>
+                              </ul>                          </li>
+                        </ul>                    </li>
+                  </ul>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="spatialgraphenvironment-sge">SpatialGraphEnvironment (SGE)</h1>
+
+<p>A spatial graph is a data structure that represents a graph, whose nodes have spatial locations. The addition of spatial locations to the nodes has profound effects on how these graphs are used and interpreted. The geometric graph environment for entities provides exploration and movement queries to change the internal positioning of entities along edges and nodes. In addition, it provides a routing component to find paths. A simple example showing a few functionalities can be found <a href="https://git.haw-hamburg.de/mars/model-deployments/-/tree/master/C%23%20Models/SGE_Test%20CS">here</a>.</p>
+<h2 id="creating-an-environment">Creating an environment</h2>
+<p>There are several ways to initialize a SpatialGraphEnvironment (SGE). The simplest possibility is to provide a georeferenced file (the format must be processable by the MARS runtime system) as a parameter.</p>
+<pre><code class="lang-csharp">var environment = new SpatialGraphEnvironment(&quot;&lt;graphfile to import&gt;&quot;);
+</code></pre><h2 id="interaction-withwithin-the-spatial-graph-environment-sge">Interaction with/within the Spatial Graph Environment (SGE)</h2>
+<h3 id="add-an-agent-to-the-environment">Add an agent to the environment</h3>
+<p>To add an object (for example, an agent or entity) to the SGE, the <code>Insert</code> method of the environment is used. For example, This method can be called in the <code>Init</code> method of an agent to insert the agent into the environment.</p>
+<pre><code class="lang-csharp">var position = Position.CreatePosition(Longitude, Latitude);
+var startNode = Environment.NearestNode(position);
+Environment.Insert(this, startNode);
+</code></pre><p>Agents are always inserted on nodes. The agent must therefore be added to the environment on a node. In this example, the agent has coordinates (longitude and latitude). The nearest node in the environment is searched for via the coordinates and the agent is placed there. </p>
+<p><strong>Note</strong>: If the coordinates are not within the SGE, the nearest node will be selected anyway &ndash; this can lead to the node not being close to the actual coordinates. Different types of entities can be inserted into an SGE. For example, bicycles or cars etc. are possible.</p>
+<h3 id="remove-an-existing-entity">Remove an existing entity</h3>
+<p>Removing an agent follows the same principle as adding it. The Remove method is executed via the environment and the entity to be removed is specified.</p>
+<pre><code class="lang-csharp">Environment.Remove(&lt;entity to remove&gt;);
+</code></pre><h3 id="move-an-agent-to-another-location">Move an agent to another location</h3>
+<p>In order to create a route in the SGE, which can then be processed, it must first be created. A route can be determined via the FindRoute method of the environment by specifying the start and destination (always from node to node). Once a route has been worked through, the <code>GoalReached</code> property is automatically set to <code>True</code>; this property can then be used to check whether an agent has arrived at its destination.</p>
+<pre><code class="lang-csharp">var startNode = Environment.GetRandomNode();  
+var goalNode = Environment.GetRandomNode();  
+
+var route = Environment.FindRoute(startNode, goalNode);
+
+while (!route.GoalReached)  
+{    
+  Layer.Environment.Move(&lt;Agent&gt;, route, &lt;Movement speed of the agent&gt;);  
+}
+
+Console.WriteLine(&quot;The Agent has arrived!&quot;);
+</code></pre><h2 id="explore-other-agents-and-resources">Explore other agents and resources</h2>
+<p>Agents can explore an <code>SpatialGraphEnvironment</code> to identify other agents and resources by calling the <code>Explore(&lt;entity&gt;, &lt;route&gt;, &lt;distance&gt;)</code> method on the environment. Below is an example.</p>
+<pre><code class="lang-csharp">SpatialGraphExploreResult result = Environment.Explore(&lt;entity&gt;, &lt;route&gt;, &lt;distance&gt;);
+</code></pre><p>This call explores the <code>Environment</code> starting from the position of <code>&lt;entity&gt;</code>. Specifically, the environment is explored along the <code>&lt;route&gt;</code> at a length of <code>&lt;distance&gt;</code> (in meters). For example, the call <code>Environment.Explore(this, Route, 100)</code> explores the environment starting from the position of the caller and going along the <code>Route</code> object for <code>100</code> meters. The return of such a call contains the route segments (i.e., edges of the <code>SpatialGraphEnvironment</code>) that are within the specified distance. The <code>result</code> contains all edges (that are reachable given the specified <code>distance</code>), along with their information. This might include other agents that are currently on those edges.</p>
+<p>The above example explores in the forward direction (per default). Alternatively, the direction of exploration can be specified, as shown in the below example.</p>
+<pre><code class="lang-csharp">SpatialGraphExploreResult result = Environment.Explore(&lt;entity&gt;, &lt;route&gt;, &lt;distance&gt;, &lt;only_next&gt;, &lt;explore_direction&gt;);
+</code></pre><p>This call has two additional parameters <code>&lt;only_next&gt;</code> (set to <code>false</code> per default) and <code>&lt;explore_direction&gt;</code> (set to <code>ExploreDirection.Forward</code> per default). <code>&lt;only_next&gt;</code> is a boolean that, if <code>true</code>, returns only the first entity/agent per edge that is returned in <code>result</code>. The parameter <code>&lt;explore_direction&gt;</code> specifies the direction in which the exploration should occur. This can be either <code>ExploreDirection.Forward</code>, <code>ExploreDirection.Backward</code>, or <code>ExploreDirection.Both</code>.</p>
+<p><strong>Note:</strong> Usually, an agent&#39;s exploration activities occur via a <code>RasterLayer</code> or <code>VectorLayer</code>. For more information on the exploration options provided by these layer types, please click <a href="https://mars.haw-hamburg.de/articles/core/basic-concepts/layers.html">here</a>.</p>
+<h2 id="importing-data-for-a-sge">Importing data for a SGE</h2>
+<p>As can be seen in the previous section, you can import data by specifying a file. This data must be in a processable format. Such a format contains spatial information data. This data can also be loaded via a configuration file. The following is an example of loading such data via <em>config.json</em>:</p>
+<pre><code class="lang-json">Previous section...
+&quot;layers&quot;: [  
+  {  
+    &quot;name&quot;:&quot;ResidentLayer&quot;,  
+    &quot;inputs&quot;: [  
+      {
+        &quot;file&quot;: &quot;Resources/walk_graph_layer.geojson&quot;,  
+        &quot;inputConfiguration&quot;: 
+          {
+            &quot;modalities&quot;: [ &quot;Walking&quot; ],
+            &quot;isBidirectedGraph&quot;: true  
+         }
+      },
+      {
+        &quot;file&quot;: &quot;Resources/drive_graph_layer.geojson&quot;,  
+        &quot;inputConfiguration&quot;:
+          {  
+            &quot;modalities&quot;: [ &quot;Cycling&quot; ]
+          }
+      }
+    ]
+  }
+Next section...
+</code></pre><p>In this example, the layer type <code>ResidentLayer</code> receives data from two input files. The first input file contains data that represents a pedestrian travel network, while the second input file contains data that represents a car and bicycle travel network. Each network is associated with one or more travel modalities. A travel modality is a manner of moving in a given network. For example, in a pedestrian travel network, it is typically possible to move on foot (<code>modality = Walking</code>), but it should not be possible to travel by car (<code>modality = Driving</code>). However, some modalities can be used on more than one travel network &ndash; such as <code>Cycling</code>, which can be used on a pedestrian network as well as on a driving network.</p>
+<p><code>isBidirectedGraph</code> is an optional parameter. It indicates whether the invited graph is directed or not.</p>
+<p><strong>Note:</strong> Again, two environments were loaded to illustrate. It is also possible to load only one environment.</p>
+<p>Within the <code>InitLayer(...)</code> method of the <code>ResidentLayer</code> class, the data can be loaded as follows:</p>
+<pre><code class="lang-csharp">var inputs = layerInitData.LayerInitConfig.Input;
+
+if (inputs != null) {
+    Environment = new SpatialGraphEnvironment(new SpatialGraphOptions
+    {
+        GraphImports = layerInputData.LayerInputConfig.Inputs
+    });
+}
+</code></pre><p>This code snippet can be used to integrate input data from an GIS data file (e.g., GEOJSON) into the environment. For more information and an example, please see <a href="https://git.haw-hamburg.de/mars/model-deployments/-/blob/master/C%23%20Models/SGE_Test%20CS/SGE_Test%20CS/Model/ResidentLayer.cs">here</a>.</p>
+<h2 id="exporting-data-for-a-sge">Exporting data for a SGE</h2>
+<p>There can be various situations where it becomes necessary to view the environment in a GIS. In this case, it is possible to perform an export. To export an SGE, a new GeoJson file can be created, and the environment copied into it using the <code>ToGeoJson()</code> method.</p>
+<pre><code class="lang-csharp">File.WriteAllText(&quot;SGE.geojson&quot;, environment.ToGeoJson());
+</code></pre><h2 id="special-cases">Special Cases</h2>
+<h3 id="import-multiple-graphs-with-different-spatialgraphoptions">Import multiple graphs with different <code>SpatialGraphOptions</code></h3>
+<p>In the following example, an environment is created within which agents can walk or cycle. Both modalities have different environments. Through this separation, pedestrian paths and bicycle paths (in this example) are represented.</p>
+<pre><code class="lang-csharp">var environment = new SpatialGraphEnvironment(new SpatialGraphOptions  
+{  
+    GraphImports = new List&lt;Input&gt;  
+    {  
+        new()  
+        {  
+            File = &quot;&lt;filename for walking graph here&gt;&quot;,   
+            InputConfiguration = new InputConfiguration 
+            { 
+                Modalities = new HashSet&lt;SpatialModalityType&gt; { SpatialModalityType.Walking } }  
+            },  
+        new()  
+        {  
+            File = &quot;&lt;filename for driving graph here&gt;&quot;,  
+            InputConfiguration = new InputConfiguration  
+            {  
+                IsBiDirectedImport = true,  
+                InferNodesOnEdgeIntersections = true
+                Modalities = new HashSet&lt;SpatialModalityType&gt; { SpatialModalityType.CyclingOwnBike}  
+            } 
+        } 
+    }
+});
+</code></pre><p>Here is another example in C# code:</p>
+<pre><code class="lang-csharp">var file = &quot;&lt;example environment file&gt;&quot;;
+var input = new Input
+{
+    File = file,
+    InputConfiguration = new InputConfiguration
+        { InferNodesOnEdgeIntersections = true, IsBiDirectedImport = true }
+};
+var graph = new SpatialGraphEnvironment(input);
+</code></pre><h3 id="spatialgraphoptions">SpatialGraphOptions</h3>
+<p>This class <code>SpatialGraphOptions</code> provides all relevant options for building the <code>ISpatialGraphEnvironment</code>. Inside the <code>InputConfiguration</code> the files are specified which are associated with a certain modal type.  A <code>HashSet</code> of modalities is then initialized. The <code>SpatialModalityType</code> is the walking modality for the walk graph and the cycling modality for the drive graph. </p>
+<p>Other <code>SpatialGraphOptions</code> are:</p>
+<h4 id="infernodesonedgeintersections">InferNodesOnEdgeIntersections</h4>
+<p>The <code>InferNodesOnEdgeIntersections</code> option (boolean): Geometries where LINESTRINGs do not end flush on intersections cannot be (functionally) imported, as not all intersections/routes can be navigated. If the option is activated, nodes are inserted at the ends of these LINESTRINGs. An example: The red nodes are inserted because the upper one is missing a section of an intersection (starting from the node, there are different edges) and the lower node is missing completely (here the graph ends).</p>
+<blockquote><p>This option is especially usefull if you have a graph with missing nodes that should be inferred by the importer.</p>
+</blockquote>
+<p><img src="../../../../images/docu/InferNodesOnEdgeIntersections.PNG" alt="Infer Nodes on Edge Intersections"></p>
+<p>Because the import with this additional validation is expensive computational wise, it is handy to export the so imported and now enhanced graph, both for visual validation in QGIS as well as usage for following simulation runs instead of the raw graph (see <a href="#exporting-data-for-a-sge">section exporting</a>). </p>
+<pre><code class="lang-json">{
+  &quot;name&quot;: &quot;SpatialGraphMediatorLayer&quot;,
+  &quot;inputs&quot;: [
+    {
+      &quot;file&quot;: &quot;resources/graph.geojson&quot;,
+      &quot;inputConfiguration&quot;: {
+        &quot;isBidirectedGraph&quot;: true,
+        &quot;inferNodesOnEdgeIntersections&quot;: true
+      }
+    }
+  ]
+}
+</code></pre><h4 id="nodeintegrationkind">NodeIntegrationKind</h4>
+<p>The <code>NodeIntegrationKind</code> option (Enum): When inviting different environments, you need transitions between the different graphs. These transitions are used so that an agent can switch from one graph to the other. Possible settings are: </p>
+<ul>
+<li><code>MergeNode</code>: If two nodes are spatially close to each other, the first node is chosen and the second node is discarded. The associated edges are redirected to the first node.</li>
+<li><code>LinkNode</code>: If two nodes are spatially close to each other, an edges is created between the them to connects them to each other.</li>
+</ul>
+<p><img src="../../../../images/docu/merge_node_link_node.png" alt="Example of MergeNode and LinkNode"></p>
+<p><strong>Note:</strong> In the above example, two environments are imported. Alternatively, it is possible to import only one environment. In this case, only one file would be specified under <code>Inputs</code>. </p>
+<p>The <code>NoHelperNodes</code> option imports all nodes at first. When the edges are imported, no helper nodes are created to have a clean ending of an edge (if a node is not within tolerance range) but always the nearest node ist chosen as start/end of an edge.</p>
+<blockquote><p>This is especially helpful when importing train graphs, where the nodes are semantically stations and the edges need to serve these stations, therefor have to end in a station and not in a helper node near by.</p>
+</blockquote>
+<h2 id="validate-import-result">Validate import result</h2>
+<p>Generally, it is advisable to examine and validate an environment after it has been imported. This can be done by exporting the imported environment as follows:</p>
+<pre><code class="lang-csharp">File.WriteAllText(&quot;result_graph_env.geojson&quot;, environment.ToGeoJson());
+</code></pre></article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Documentation/articles/core/10_basic-concepts/environments/spatialgraphenv.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>Copyright &copy MARS GROUP.<br><strong>HAW Hamburg</strong></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,382 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Data Sources | MARS LIFE Runtime System </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Data Sources | MARS LIFE Runtime System ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../../../images/mars/mars-icon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+  
+  <meta property="docfx:rel" content="../../../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../images/mars/mars-icon-resized.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../../../articles/about_mars.html" title="Documentation">Documentation</a>
+                      </li>
+                      <li>
+                          <a href="../../../simulation/Mars.Core.html" title="Core API">Core API</a>
+                      </li>
+                      <li>
+                          <a href="../../../soh/SOHBicycleModel.Common.html" title="SmartOpenHamburg API">SmartOpenHamburg API</a>
+                      </li>
+                      <li>
+                          <a href="../../../components/Mars.Components.html" title="Model Components API">Model Components API</a>
+                      </li>
+                      <li>
+                          <a href="../../../common/Mars.Common.html" title="Common API">Common API</a>
+                      </li>
+                </ul>            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="../../dsl/index.html" title="MARS DSL Language" class="">MARS DSL Language</a>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../core/index.html" title="MARS Runtime System" class="">MARS Runtime System</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../core/getting-started/index.html" title="Getting started with MARS" class="">Getting started with MARS</a>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../core/basic-concepts/index.html" title="Basic Concepts" class="">Basic Concepts</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../core/basic-concepts/multi-agent-simulation.html" title="Multi-Agent-Simulation" class="">Multi-Agent-Simulation</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/basic-concepts/agent.html" title="Agents" class="">Agents</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/basic-concepts/layers.html" title="Layers" class="">Layers</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/basic-concepts/entity.html" title="Entities" class="">Entities</a>
+                                </li>
+                                <li class="">
+                                  <span class="expand-stub"></span>
+                                  <a href="../../core/basic-concepts/environments/index.html" title="Environments" class="">Environments</a>
+
+                                    <ul class="nav level4">
+                                      <li class="">
+                                        <a href="../../core/basic-concepts/environments/spatialhashenv.html" title="SpatialHashEnvironment" class="">SpatialHashEnvironment</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="../../core/basic-concepts/environments/geohashenv.html" title="GeoHashEnvironment" class="">GeoHashEnvironment</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="../../core/basic-concepts/environments/spatialgraphenv.html" title="SpatialGraphEnvironment" class="">SpatialGraphEnvironment</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="../../core/basic-concepts/environments/collisionenv.html" title="CollisionEnvironment" class="">CollisionEnvironment</a>
+                                      </li>
+                                    </ul>                                </li>
+                                <li class="">
+                                  <a href="../../core/basic-concepts/model.html" title="Model Setup" class="">Model Setup</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../core/model-configuration/index.html" title="Model Configuration" class="">Model Configuration</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../core/model-configuration/agent_config.html" title="Agent and Entity Configuration" class="">Agent and Entity Configuration</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/model-configuration/layer_config.html" title="Layer Configuration" class="">Layer Configuration</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/model-configuration/output_filter.html" title="Output Filter" class="">Output Filter</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/model-configuration/sim_config_options.html" title="Simulation Configuration Options" class="">Simulation Configuration Options</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/model-configuration/sim_output_formats.html" title="Simulation Output Formats" class="">Simulation Output Formats</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="active">
+                            <span class="expand-stub"></span>
+                            <a href="../../core/data-sources/index.html" title="Data Sources" class="active">Data Sources</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../core/data-sources/geospatial_data_sources.html" title="Geospatial Data Sources" class="">Geospatial Data Sources</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/data-sources/geospatial_data_types.html" title="Geospatial Data Types" class="">Geospatial Data Types</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/data-sources/ascii-grid.html" title="ASCII grid (.asc)" class="">ASCII grid (.asc)</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/data-sources/csv.html" title="CSV" class="">CSV</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/data-sources/time-series.html" title="Time-series Data" class="">Time-series Data</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../core/analysis-and-visualization/index.html" title="Analysis and Visualization" class="">Analysis and Visualization</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../core/analysis-and-visualization/visualizing_agent_trips_kepler.html" title="Visualizing Agent Movement Trajectories" class="">Visualizing Agent Movement Trajectories</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/analysis-and-visualization/live_visualization.html" title="Simple Live Visualization" class="">Simple Live Visualization</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/analysis-and-visualization/visualizing_sim_results.html" title="Analyzing Output Data" class="">Analyzing Output Data</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../core/tutorials/index.html" title="Tutorials" class="">Tutorials</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../core/tutorials/create_new_mars_csharp_project.html" title="Creating a new MARS C# project" class="">Creating a new MARS C# project</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/tutorials/main_and_configs.html" title="Creating a starting point for your model" class="">Creating a starting point for your model</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/tutorials/create_vector_layer_raster_layer.html" title="Creating vector and raster layer files" class="">Creating vector and raster layer files</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/tutorials/wolf_sheep_tutorial.html" title="Building your first model (wolf-sheep-grass)" class="">Building your first model (wolf-sheep-grass)</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/help/index.html" title="Common problems and solutions" class="">Common problems and solutions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/tutorials/geo-data-acquisition.html" title="Acquire geo data for layers" class="">Acquire geo data for layers</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/tutorials/deploy_in_cloud.html" title="Build and start your model in Kubernetes cluster" class="">Build and start your model in Kubernetes cluster</a>
+                                </li>
+                              </ul>                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../soh/index.html" title="SmartOpenHamburg" class="">SmartOpenHamburg</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../soh/getting-started.html" title="Quick Start" class="">Quick Start</a>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../soh/scenarios/index.html" title="Ready to use scenarios (boxes)" class="">Ready to use scenarios (boxes)</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../soh/scenarios/ferry_transfer.html" title="Ferry Transfer" class="">Ferry Transfer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/scenarios/green_4_bikes.html" title="Green4Bikes" class="">Green4Bikes</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/scenarios/ferry_transfer_green4bikes_results.html" title="Results" class="">Results</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/scenarios/ferry_transfer_green4bikes_result_scheme.html" title="Result Schemas" class="">Result Schemas</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../soh/index.html" title="Layer" class="">Layer</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../soh/layers/multi_modal_layer.html" title="Multimodal Layer" class="">Multimodal Layer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/layers/modal_layer.html" title="Modal Layer" class="">Modal Layer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/layers/scheduling_layer.html" title="Scheduling Layer" class="">Scheduling Layer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/layers/vector_layer.html" title="Vector Layer" class="">Vector Layer</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../soh/index.html" title="Agents" class="">Agents</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../soh/agents.html" title="Behaviour Model" class="">Behaviour Model</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/agents/multi_modal_agent.html" title="Multimodal" class="">Multimodal</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/agents/multi_capable_agent.html" title="Multi-Capable" class="">Multi-Capable</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/steering.html" title="Multi-Modality" class="">Multi-Modality</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/agents/citizen.html" title="Citizen" class="">Citizen</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/agents/traveler.html" title="Traveler" class="">Traveler</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../soh/index.html" title="Entities" class="">Entities</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../soh/entities.html" title="Referencing" class="">Referencing</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/entities/car.html" title="Street Vehicles" class="">Street Vehicles</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/entities/bicycle.html" title="Bicycle Vehicles" class="">Bicycle Vehicles</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/entities/ferry.html" title="Ferry" class="">Ferry</a>
+                                </li>
+                              </ul>                          </li>
+                        </ul>                    </li>
+                  </ul>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h3 id="data-sources">Data Sources</h3>
+
+<ul>
+<li><p><a href="geospatial_data_sources.html">Geospatial Data Sources</a>: Describes how to search for geospatial data online.</p>
+</li>
+<li><p><a href="geospatial_data_types.html">Geospatial Data Types</a>: Describes the data types supported by the MARS runtime system.</p>
+</li>
+<li><p><a href="csv.html">CSV</a>: Explains how to use data stored in csv files.</p>
+</li>
+<li><p><a href="ascii-grid.html">ASCII Grid (*.asc)</a>: Explains how to load shapefiles.</p>
+</li>
+</ul>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Documentation/articles/core/data-sources/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>Copyright &copy MARS GROUP.<br><strong>HAW Hamburg</strong></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,581 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Definition of Layer | MARS LIFE Runtime System </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Definition of Layer | MARS LIFE Runtime System ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../../../images/mars/mars-icon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+  
+  <meta property="docfx:rel" content="../../../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../images/mars/mars-icon-resized.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../../../articles/about_mars.html" title="Documentation">Documentation</a>
+                      </li>
+                      <li>
+                          <a href="../../../simulation/Mars.Core.html" title="Core API">Core API</a>
+                      </li>
+                      <li>
+                          <a href="../../../soh/SOHBicycleModel.Common.html" title="SmartOpenHamburg API">SmartOpenHamburg API</a>
+                      </li>
+                      <li>
+                          <a href="../../../components/Mars.Components.html" title="Model Components API">Model Components API</a>
+                      </li>
+                      <li>
+                          <a href="../../../common/Mars.Common.html" title="Common API">Common API</a>
+                      </li>
+                </ul>            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="../../dsl/index.html" title="MARS DSL Language" class="">MARS DSL Language</a>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../core/index.html" title="MARS Runtime System" class="">MARS Runtime System</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../core/00_getting-started/index.html" title="Getting started with MARS" class="">Getting started with MARS</a>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../core/10_basic-concepts/index.html" title="Basic Concepts" class="">Basic Concepts</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../core/10_basic-concepts/00_multi-agent-simulation.html" title="Multi-Agent-Simulation" class="">Multi-Agent-Simulation</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/10_basic-concepts/10_agent.html" title="Agents" class="">Agents</a>
+                                </li>
+                                <li class="active">
+                                  <a href="../../core/10_basic-concepts/20_layers.html" title="Layers" class="active">Layers</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/10_basic-concepts/30_entity.html" title="Entities" class="">Entities</a>
+                                </li>
+                                <li class="">
+                                  <span class="expand-stub"></span>
+                                  <a href="../../core/10_basic-concepts/environments/index.html" title="Environments" class="">Environments</a>
+
+                                    <ul class="nav level4">
+                                      <li class="">
+                                        <a href="../../core/10_basic-concepts/environments/spatialhashenv.html" title="SpatialHashEnvironment" class="">SpatialHashEnvironment</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="../../core/10_basic-concepts/environments/geohashenv.html" title="GeoHashEnvironment" class="">GeoHashEnvironment</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="../../core/10_basic-concepts/environments/spatialgraphenv.html" title="SpatialGraphEnvironment" class="">SpatialGraphEnvironment</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="../../core/10_basic-concepts/environments/collisionenv.html" title="CollisionEnvironment" class="">CollisionEnvironment</a>
+                                      </li>
+                                    </ul>                                </li>
+                                <li class="">
+                                  <a href="../../core/10_basic-concepts/model.html" title="Model Setup" class="">Model Setup</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../core/model-configuration/index.md" title="Model Configuration" class="">Model Configuration</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../core/model-configuration/agent_config.md" title="Agent and Entity Configuration" class="">Agent and Entity Configuration</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/model-configuration/layer_config.md" title="Layer Configuration" class="">Layer Configuration</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/model-configuration/output_filter.md" title="Output Filter" class="">Output Filter</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/model-configuration/sim_config_options.md" title="Simulation Configuration Options" class="">Simulation Configuration Options</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/model-configuration/sim_output_formats.md" title="Simulation Output Formats" class="">Simulation Output Formats</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../core/data-sources/index.md" title="Data Sources" class="">Data Sources</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../core/data-sources/geospatial_data_sources.md" title="Geospatial Data Sources" class="">Geospatial Data Sources</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/data-sources/geospatial_data_types.md" title="Geospatial Data Types" class="">Geospatial Data Types</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/data-sources/ascii-grid.md" title="ASCII grid (.asc)" class="">ASCII grid (.asc)</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/data-sources/csv.md" title="CSV" class="">CSV</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/data-sources/time-series.md" title="Time-series Data" class="">Time-series Data</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../core/analysis-and-visualization/index.md" title="Analysis and Visualization" class="">Analysis and Visualization</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../core/analysis-and-visualization/visualizing_agent_trips_kepler.md" title="Visualizing Agent Movement Trajectories" class="">Visualizing Agent Movement Trajectories</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/analysis-and-visualization/live_visualization.md" title="Simple Live Visualization" class="">Simple Live Visualization</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/analysis-and-visualization/visualizing_sim_results.md" title="Analyzing Output Data" class="">Analyzing Output Data</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../core/tutorials/index.html" title="Tutorials" class="">Tutorials</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../core/tutorials/create_new_mars_csharp_project.html" title="Creating a new MARS C# project" class="">Creating a new MARS C# project</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/tutorials/main_and_configs.html" title="Creating a starting point for your model" class="">Creating a starting point for your model</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/tutorials/create_vector_layer_raster_layer.html" title="Creating vector and raster layer files" class="">Creating vector and raster layer files</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/tutorials/wolf_sheep_tutorial.html" title="Building your first model (wolf-sheep-grass)" class="">Building your first model (wolf-sheep-grass)</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/help/index.md" title="Common problems and solutions" class="">Common problems and solutions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/tutorials/geo-data-acquisition.html" title="Acquire geo data for layers" class="">Acquire geo data for layers</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../core/tutorials/deploy_in_cloud.html" title="Build and start your model in Kubernetes cluster" class="">Build and start your model in Kubernetes cluster</a>
+                                </li>
+                              </ul>                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../soh/index.html" title="SmartOpenHamburg" class="">SmartOpenHamburg</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../soh/getting-started.html" title="Quick Start" class="">Quick Start</a>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../soh/scenarios/index.html" title="Ready to use scenarios (boxes)" class="">Ready to use scenarios (boxes)</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../soh/scenarios/ferry_transfer.html" title="Ferry Transfer" class="">Ferry Transfer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/scenarios/green_4_bikes.html" title="Green4Bikes" class="">Green4Bikes</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/scenarios/ferry_transfer_green4bikes_results.html" title="Results" class="">Results</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/scenarios/ferry_transfer_green4bikes_result_scheme.html" title="Result Schemas" class="">Result Schemas</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../soh/index.html" title="Layer" class="">Layer</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../soh/layers/multi_modal_layer.html" title="Multimodal Layer" class="">Multimodal Layer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/layers/modal_layer.html" title="Modal Layer" class="">Modal Layer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/layers/scheduling_layer.html" title="Scheduling Layer" class="">Scheduling Layer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/layers/vector_layer.html" title="Vector Layer" class="">Vector Layer</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../soh/index.html" title="Agents" class="">Agents</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../soh/agents.html" title="Behaviour Model" class="">Behaviour Model</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/agents/multi_modal_agent.html" title="Multimodal" class="">Multimodal</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/agents/multi_capable_agent.html" title="Multi-Capable" class="">Multi-Capable</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/steering.html" title="Multi-Modality" class="">Multi-Modality</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/agents/citizen.html" title="Citizen" class="">Citizen</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/agents/traveler.html" title="Traveler" class="">Traveler</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../soh/index.html" title="Entities" class="">Entities</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../soh/entities.html" title="Referencing" class="">Referencing</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/entities/car.html" title="Street Vehicles" class="">Street Vehicles</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/entities/bicycle.html" title="Bicycle Vehicles" class="">Bicycle Vehicles</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../soh/entities/ferry.html" title="Ferry" class="">Ferry</a>
+                                </li>
+                              </ul>                          </li>
+                        </ul>                    </li>
+                  </ul>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="definition-of-layer">Definition of Layer</h2>
+
+<p>Layers represent the <em>environment</em> in which agents <em>live</em>. They serve as surrounding for their dependent agents. In this context, they are responsible to create their agents. Do not confuse layers with the <a href="environments"><code>Environment</code>-type</a> that is a data structure that is used for moving and exploring spatial objects (<a href="agent">agents</a> and <a href="entity">entities</a>). A layer may however use an environment that is used by its agents. </p>
+<p>Moreover, layers may hold and provide data, depending on their type.  They offer possibilities for input of various data formats (<a href="../data-sources/index.md">see more information about possible inputs</a>). </p>
+<p>Layers are the central model element in a MARS model and are automatically generated by the MARS runtime system and mutual dependencies between different layers are resolved. They require to be registered in the <a href="model">model description</a>.</p>
+<p>In MARS, the following layers are distinguished</p>
+<ul>
+<li><a href="#basic-layer">Basic Layer</a></li>
+<li>Layers with dependencies or activity<ul>
+<li><a href="#dependent-layer">Dependent Layer</a></li>
+<li><a href="#active-layer">Active Layer</a></li>
+</ul>
+</li>
+<li>Data Layer<ul>
+<li><a href="#vector-layer">Vector Layer</a></li>
+<li><a href="#raster-layer">Raster Layer</a></li>
+</ul>
+</li>
+</ul>
+<p>The layer <code>ILayer</code> contract is structured as follows:</p>
+<pre><code class="lang-plantUml">interface IModelObject {
+}
+
+interface ILayer {
+    InitLayer(layerInitData:TInitData, registerAgentHandle:RegisterAgent, unregisterAgentHandle:UnregisterAgent) : bool
+    GetCurrentTick() : long
+    SetCurrentTick(currentStep:long) : void
+}
+IModelObject &lt;|-- ILayer
+
+interface IDataLayer {
+}
+ILayer &lt;|-- IDataLayer
+</code></pre><h3 id="basic-layer">Basic Layer</h3>
+<p>To define a layer the <code>ILayer</code> interface must be implemented <strong>or</strong> inherited from the existing abstract implementation <code>AbstractLayer</code>. </p>
+<p>In the model code, a <code>using</code> import for the namespace <code>Mars.Components.Layers</code> must be added to the own model file.</p>
+<pre><code class="lang-C#">using Mars.Components.Layers;
+</code></pre><p>Then a new layer type can be defined in the form of a class that inherits from the abstract class <code>AbstractLayer</code>:</p>
+<pre><code class="lang-C#">public class MyLayer : AbstractLayer
+{
+        public override bool InitLayer(TInitData layerInitData, RegisterAgent registerAgentHandle, UnregisterAgent unregisterAgentHandle)
+    {
+        base.InitLayer(layerInitData, registerAgentHandle, unregisterAgentHandle);
+        // Do your initialization logic here.
+        return true;
+    } 
+}
+</code></pre><p>The <code>InitLayer</code> method can be used to execute custom logic, to initialize <a href="environments.md">Environments</a> or to <a href="agent_spawning.md">Spawning</a> agents.</p>
+<blockquote><p>Please note to call the base implementation <code>base.InitLayer(layerInitData, registerAgentHandle, unregisterAgentHandle);</code> to ensure correct initialization along the class hierarchy.</p>
+</blockquote>
+<p>Layer needs to be registered in the <code>ModelDescription</code> by calling the <code>AddLayer&lt;TLayer&gt;()</code> in your entry point <code>Main()</code> method, to be an active part of the simulation. Active means here that the layer will be managed (initialized and referenced in other active entities) by the MARS framework.</p>
+<pre><code class="lang-c#">private static void Main(string[] args)
+{
+ var description = new ModelDescription();
+ description.AddLayer&lt;MyLayer&gt;();
+ //...
+}
+</code></pre><hr>
+<h3 id="dependent-layer">Dependent Layer</h3>
+<p>If layers needs references to other layer for object and direct agent interaction or just to access data layer, the definition of dependent layers is necessary. Dependent layers are acquired by defining the layer instance as a <strong>property</strong>. MARS resolves this dependency by using <code>PropertyInjection</code> to <strong>automatically</strong> and assigns the dependent layer to this property.</p>
+<blockquote><p>Cyclic dependencies between Layer can be defined as well, but this is an indication for a bad conceptual design.</p>
+</blockquote>
+<pre><code class="lang-C#">public class MyLayer : AbstractLayer
+{
+    [PropertyDescription]
+    public MyDependentLayer DependentLayer { get; set; }
+}
+</code></pre><hr>
+<h3 id="active-layer">Active Layer</h3>
+<p>If the layer requires to act within the simulation, it can be made active, which provides the possibility to act before, after and within the tick. The interface <code>ISteppedActiveLayer</code> will get ticked by the LayerContainer, just as the average ITickClient. In Addition it provides to more methods which allow to hook into the moment just before and after a tick.</p>
+<pre><code class="lang-C#">public class MyLayer : ISteppedActiveLayer
+{
+        public void Tick()
+        {
+            //do something this tick
+        }
+
+        public void PreTick()
+        {
+            //do something bevore the tick
+        }
+
+        public void PostTick()
+        {
+            //do something after the tick
+        }
+}
+</code></pre><p>The base implementation of the <code>ISteppedActiveLayer</code> interface is the <code>AbstractActiveLayer</code> where each step phase (pre, tick, post) can be override and activated for a stepwise behaviour on a layer type.</p>
+<hr>
+<h3 id="data-layer">Data Layer</h3>
+<p>There are different layer types provides, to integrate data into the model and make it available for agents. To represent spatial components of the model MARS offers raster and vector layers, which can be used to represent the simulation world under consideration (e.g. temperatures, landscapes, buildings, roads, passive objects). All layers can be found in the package <code>Mars.Components.Layers</code>.</p>
+<p>In the model code a <code>using</code> import for the namespace <code>Mars.Components.Layers</code> must be added to the own model file, if not already done.</p>
+<pre><code class="lang-C#">using Mars.Components.Layers;
+</code></pre><h4 id="raster-layer">Raster Layer</h4>
+<p><a name="raster_layer"></a></p>
+<p>Raster layer and grid layer are able to process grid and raster data and can be viewed similar to a 2D matrix. Real numerical values are stored in a n x m matrix and have a certain semantic nominal value.</p>
+<p>The <code>IRaster</code> contract provides the following functionalities:</p>
+<pre><code class="lang-plantUml">interface IRaster {
+    CalculateStatistics() : void
+}
+interface &quot;IRaster`1&quot;&lt;TValue&gt; {
+    CurrentBand : int &lt;&lt;get&gt;&gt;
+    NumBands : int &lt;&lt;get&gt;&gt;
+    Width : int &lt;&lt;get&gt;&gt;
+    Height : int &lt;&lt;get&gt;&gt;
+    CellHeight : double &lt;&lt;get&gt;&gt; &lt;&lt;set&gt;&gt;
+    CellWidth : double &lt;&lt;get&gt;&gt; &lt;&lt;set&gt;&gt;
+    StartColumn : int &lt;&lt;get&gt;&gt;
+    StartRow : int &lt;&lt;get&gt;&gt;
+    EndColumn : int &lt;&lt;get&gt;&gt;
+    EndRow : int &lt;&lt;get&gt;&gt;
+    NoDataValue : double &lt;&lt;get&gt;&gt; &lt;&lt;set&gt;&gt;
+    Maximum : double &lt;&lt;get&gt;&gt;
+    Mean : double &lt;&lt;get&gt;&gt;
+    Minimum : double &lt;&lt;get&gt;&gt;
+    ReadBlock(xOff:int, yOff:int, sizeX:int, sizeY:int) : IRaster&lt;TValue&gt;
+    WriteBlock(blockValues:IRaster&lt;TValue&gt;, xOff:int, yOff:int, xSize:int, ySize:int) : void
+}
+&quot;IRaster`1&quot; &quot;&lt;double&gt;&quot; &lt;|-- IRaster
+&quot;IRaster`1&quot; --&gt; &quot;LowerLeft&quot; Position
+&quot;IRaster`1&quot; --&gt; &quot;UpperRight&quot; Position
+
+interface IRasterLayer {
+    GetValueByGeoPosition(coordinate:Position) : double
+    GetValueByGridPosition(coordinate:Position) : double
+}
+IDataLayer &lt;|-- IRasterLayer
+IRaster &lt;|-- IRasterLayer
+IDataSet &lt;|-- IRasterLayer
+</code></pre><p><img src="../../../images/docu/perfect_raster_hammerpark.png" alt="HammerparkRaster">
+The raster above shows a sample black area which is associated to concrete pixel value. This value can be used to solve problems such as, <em>querying a coordinate around the park</em>.</p>
+<p>To define a grid layer a new layer must inherit from the abstract <code>RasterLayer</code>:</p>
+<pre><code class="lang-C#">public class MyRasterLayer : RasterLayer
+{
+
+}
+</code></pre><p>The raster layer offers various operations for processing matrix data and allows e.g. k-NN <code>Explore</code> queries for nearby cells and coordinates whose nuclei match a condition.</p>
+<p>The <code>explore</code> is used to query all raster cells that are within a <code>radius</code> and match a selection criterion.</p>
+<pre><code class="lang-C#">MyRasterLayer MyRaster { get; set; }
+...
+var source = Position.CreatePosition(30,40);
+var result MyRaster.Explore(source, 10, 5);
+</code></pre><p>The call <code>Explore(source, 10, 5)</code> returns a sequence of the first <code>5</code> cells with their values that are within the <code>radius</code> of 10 steps starting from coordinate <code>(30,40)</code>.</p>
+<blockquote><p>Please note that the semantic of the <code>radius</code> you specify for the <code>Explore</code> depends on the distance function used within the <code>raster-layer</code> (<code>Haversine</code> with <code>meter</code> for Geospatial, <code>Chebyshev</code> for Grid).</p>
+</blockquote>
+<p>A fourth argument can be used to <em>optionally</em> define a selection predicate to search for specific cells that meet a condition.</p>
+<pre><code class="lang-C#">MyRasterLayer MyRaster { get; set; }
+...
+var source = Position.CreatePosition(30,40);
+var result MyRaster.Explore(source, 10, -1, cell =&gt; cell &gt; 10);
+</code></pre><p>The call <code>Explore(source, 10, 5, cell =&gt; cell &gt; 10)</code> queries for all cells (<code>-1</code>) in the radius ofn <code>10</code> whose cell value is greater than <code>10</code>.</p>
+<h4 id="vector-layer">Vector Layer</h4>
+<p>Vector layers are used to map vector objects that can be represented by points, lines or areas. Vector objects are the most commonly used types for modeling the simulated environment.
+ <img src="../../../images/docu/vector_hammerpark.png" alt="HammerparkRaster">
+The vector layer above shows an example vector layer, building the closed area to represent the park to solve problems such as <em>Checking for position, whether they are inside the park or not</em>.<br>To define a vector layer, a new layer must inherit from the abstract VectorLayer:</p>
+<p>The <code>IVectorLayer</code> contract is providing the following functionalities:</p>
+<pre><code class="lang-plantUml">
+interface IVectorLayer {
+    SerializeJson() : string
+    SerializeFeaturesJson() : IEnumerable&lt;string&gt;
+}
+interface &quot;IVectorLayer`1&quot;&lt;T&gt; {
+    CurrentTsIndex : int &lt;&lt;get&gt;&gt;
+    GetClosestPoint(gpsCoordinate:Position, maxDistance:double, predicate:Func&lt;T, bool&gt;) : Position
+    Distance(featureIndex:int, coords:IEnumerable&lt;Position&gt;) : double
+    IsPointInside(coordinate:Position) : bool
+    IsMultiPointInside(coords:IEnumerable&lt;Position&gt;) : bool
+    IsLineStringInside(coords:IEnumerable&lt;Position&gt;) : bool
+    IsMultiPointCrossing(coords:IEnumerable&lt;Position&gt;) : bool
+    IsLineStringCrossing(coords:IEnumerable&lt;Position&gt;) : bool
+    IsMultiPointIntersecting(coords:IEnumerable&lt;Position&gt;) : bool
+    IsLineStringIntersecting(coords:IEnumerable&lt;Position&gt;) : bool
+    IsMultiPointOverlapping(coords:IEnumerable&lt;Position&gt;) : bool
+    IsLineStringOverlapping(coords:IEnumerable&lt;Position&gt;) : bool
+    GetAccumulatedPathRating(source:Position, target:Position, distance:int) : double
+    GetAccumulatedPathRating(source:Position, distance:int, bearing:double) : double
+    GetTimeseriesDataForCurrentTick() : object
+    GetFromDataTable(featureId:int, key:string) : object
+    AddToDataTable(featureId:int, key:string, value:object) : void
+}
+class &quot;Collection`1&quot;&lt;T&gt; {
+}
+class &quot;SortedList`2&quot;&lt;T1,T2&gt; {
+}
+ILayer &lt;|-- IVectorLayer
+IVectorLayer --&gt; &quot;GeometryCollection&quot; IGeometryCollection
+IVectorLayer --&gt; &quot;Features&lt;IVectorFeature&gt;&quot; &quot;Collection`1&quot;
+IVectorLayer &lt;|-- &quot;IVectorLayer`1&quot;
+IDataLayer &lt;|-- &quot;IVectorLayer`1&quot;
+&quot;IVectorLayer`1&quot; --&gt; &quot;TimeSeriesData&lt;DateTime,double&gt;&quot; &quot;SortedList`2&quot;
+&quot;IVectorLayer`1&quot; --&gt; &quot;CoordinateReferenceSystem&quot; ICRSObject
+</code></pre><pre><code class="lang-C#">public class MyVectorLayer : VectorLayer
+{
+
+}
+</code></pre><p>Features of vector layers (points, lines, surfaces) can be individually abstracted by a model type in MARS. The <code>VectorLayer</code> offers a more abstract implementation <code>VectorLayer&lt;TFeatureType&gt;</code> for the definition of model types which can be initialized by concrete features from a vector input with data. </p>
+<p>An example for an abstract feature can look like this:</p>
+<pre><code class="lang-C#">public class MyVectorFeature : IVectorFeature
+{
+    public double MyFeatureValue { get; set; }
+
+    public void Init(IFeature feature)
+    {
+        MyFeatureValue = feature.Attributes[&quot;valueAttributeName&quot;].Value&lt;double&gt;();
+    }
+}
+</code></pre><p>If the <code>MyVectorLayer</code> is queried, concrete <code>MyVectorFeature</code> objects are returned and can be processed.</p>
+<pre><code class="lang-C#">myVectorLayer.Explore(new[] {9.99967, 53.55285}, 100, 10, myVectorFeature =&gt;
+{
+    return myVectorFeature.MyFeatureValue &gt; 20;
+});
+</code></pre></article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Documentation/articles/core/10_basic-concepts/20_layers.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>Copyright &copy MARS GROUP.<br><strong>HAW Hamburg</strong></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

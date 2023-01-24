@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GeoHashEnvironment (Geospatial Grid Environment) | MARS LIFE Runtime System </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="GeoHashEnvironment (Geospatial Grid Environment) | MARS LIFE Runtime System ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../../../../images/mars/mars-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+  
+  <meta property="docfx:rel" content="../../../../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../images/mars/mars-icon-resized.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../../../../articles/about_mars.html" title="Documentation">Documentation</a>
+                      </li>
+                      <li>
+                          <a href="../../../../simulation/Mars.Core.html" title="Core API">Core API</a>
+                      </li>
+                      <li>
+                          <a href="../../../../soh/SOHBicycleModel.Common.html" title="SmartOpenHamburg API">SmartOpenHamburg API</a>
+                      </li>
+                      <li>
+                          <a href="../../../../components/Mars.Components.html" title="Model Components API">Model Components API</a>
+                      </li>
+                      <li>
+                          <a href="../../../../common/Mars.Common.html" title="Common API">Common API</a>
+                      </li>
+                </ul>            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="../../../dsl/index.html" title="MARS DSL Language" class="">MARS DSL Language</a>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../../core/index.html" title="MARS Runtime System" class="">MARS Runtime System</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../../core/getting-started/index.html" title="Getting started with MARS" class="">Getting started with MARS</a>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../core/basic-concepts/index.html" title="Basic Concepts" class="">Basic Concepts</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../core/basic-concepts/multi-agent-simulation.html" title="Multi-Agent-Simulation" class="">Multi-Agent-Simulation</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/basic-concepts/agent.html" title="Agents" class="">Agents</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/basic-concepts/layers.html" title="Layers" class="">Layers</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/basic-concepts/entity.html" title="Entities" class="">Entities</a>
+                                </li>
+                                <li class="">
+                                  <span class="expand-stub"></span>
+                                  <a href="../../../core/basic-concepts/environments/index.html" title="Environments" class="">Environments</a>
+
+                                    <ul class="nav level4">
+                                      <li class="">
+                                        <a href="../../../core/basic-concepts/environments/spatialhashenv.html" title="SpatialHashEnvironment" class="">SpatialHashEnvironment</a>
+                                      </li>
+                                      <li class="active">
+                                        <a href="../../../core/basic-concepts/environments/geohashenv.html" title="GeoHashEnvironment" class="active">GeoHashEnvironment</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="../../../core/basic-concepts/environments/spatialgraphenv.html" title="SpatialGraphEnvironment" class="">SpatialGraphEnvironment</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="../../../core/basic-concepts/environments/collisionenv.html" title="CollisionEnvironment" class="">CollisionEnvironment</a>
+                                      </li>
+                                    </ul>                                </li>
+                                <li class="">
+                                  <a href="../../../core/basic-concepts/model.html" title="Model Setup" class="">Model Setup</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../core/model-configuration/index.html" title="Model Configuration" class="">Model Configuration</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../core/model-configuration/agent_config.html" title="Agent and Entity Configuration" class="">Agent and Entity Configuration</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/model-configuration/layer_config.html" title="Layer Configuration" class="">Layer Configuration</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/model-configuration/output_filter.html" title="Output Filter" class="">Output Filter</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/model-configuration/sim_config_options.html" title="Simulation Configuration Options" class="">Simulation Configuration Options</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/model-configuration/sim_output_formats.html" title="Simulation Output Formats" class="">Simulation Output Formats</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../core/data-sources/index.html" title="Data Sources" class="">Data Sources</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../core/data-sources/geospatial_data_sources.html" title="Geospatial Data Sources" class="">Geospatial Data Sources</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/data-sources/geospatial_data_types.html" title="Geospatial Data Types" class="">Geospatial Data Types</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/data-sources/ascii-grid.html" title="ASCII grid (.asc)" class="">ASCII grid (.asc)</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/data-sources/csv.html" title="CSV" class="">CSV</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/data-sources/time-series.html" title="Time-series Data" class="">Time-series Data</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../core/analysis-and-visualization/index.html" title="Analysis and Visualization" class="">Analysis and Visualization</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../core/analysis-and-visualization/visualizing_agent_trips_kepler.html" title="Visualizing Agent Movement Trajectories" class="">Visualizing Agent Movement Trajectories</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/analysis-and-visualization/live_visualization.html" title="Simple Live Visualization" class="">Simple Live Visualization</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/analysis-and-visualization/visualizing_sim_results.html" title="Analyzing Output Data" class="">Analyzing Output Data</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../core/tutorials/index.html" title="Tutorials" class="">Tutorials</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../core/tutorials/create_new_mars_csharp_project.html" title="Creating a new MARS C# project" class="">Creating a new MARS C# project</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/tutorials/main_and_configs.html" title="Creating a starting point for your model" class="">Creating a starting point for your model</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/tutorials/create_vector_layer_raster_layer.html" title="Creating vector and raster layer files" class="">Creating vector and raster layer files</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/tutorials/wolf_sheep_tutorial.html" title="Building your first model (wolf-sheep-grass)" class="">Building your first model (wolf-sheep-grass)</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/help/index.html" title="Common problems and solutions" class="">Common problems and solutions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/tutorials/geo-data-acquisition.html" title="Acquire geo data for layers" class="">Acquire geo data for layers</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/tutorials/deploy_in_cloud.html" title="Build and start your model in Kubernetes cluster" class="">Build and start your model in Kubernetes cluster</a>
+                                </li>
+                              </ul>                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../../soh/index.html" title="SmartOpenHamburg" class="">SmartOpenHamburg</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../../soh/getting-started.html" title="Quick Start" class="">Quick Start</a>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../soh/scenarios/index.html" title="Ready to use scenarios (boxes)" class="">Ready to use scenarios (boxes)</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../soh/scenarios/ferry_transfer.html" title="Ferry Transfer" class="">Ferry Transfer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/scenarios/green_4_bikes.html" title="Green4Bikes" class="">Green4Bikes</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/scenarios/ferry_transfer_green4bikes_results.html" title="Results" class="">Results</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/scenarios/ferry_transfer_green4bikes_result_scheme.html" title="Result Schemas" class="">Result Schemas</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../soh/index.html" title="Layer" class="">Layer</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../soh/layers/multi_modal_layer.html" title="Multimodal Layer" class="">Multimodal Layer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/layers/modal_layer.html" title="Modal Layer" class="">Modal Layer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/layers/scheduling_layer.html" title="Scheduling Layer" class="">Scheduling Layer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/layers/vector_layer.html" title="Vector Layer" class="">Vector Layer</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../soh/index.html" title="Agents" class="">Agents</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../soh/agents.html" title="Behaviour Model" class="">Behaviour Model</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/agents/multi_modal_agent.html" title="Multimodal" class="">Multimodal</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/agents/multi_capable_agent.html" title="Multi-Capable" class="">Multi-Capable</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/steering.html" title="Multi-Modality" class="">Multi-Modality</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/agents/citizen.html" title="Citizen" class="">Citizen</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/agents/traveler.html" title="Traveler" class="">Traveler</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../soh/index.html" title="Entities" class="">Entities</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../soh/entities.html" title="Referencing" class="">Referencing</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/entities/car.html" title="Street Vehicles" class="">Street Vehicles</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/entities/bicycle.html" title="Bicycle Vehicles" class="">Bicycle Vehicles</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/entities/ferry.html" title="Ferry" class="">Ferry</a>
+                                </li>
+                              </ul>                          </li>
+                        </ul>                    </li>
+                  </ul>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="geohashenvironment-geospatial-grid-environment">GeoHashEnvironment (Geospatial Grid Environment)</h1>
+
+<p>A geospatial environment is an environment that consists of geospatial point objects. A geospatial point objects is a georeferenced location that consists of a longitude and latitude, in this case based on the coordinate reference system WGS84 EPSG:4326 CRS. A simple example showing a few functionalities can be found <a href="https://git.haw-hamburg.de/mars/model-deployments/-/tree/master/C%23%20Models/Geo_Test%20CS">here</a>.</p>
+<p><strong>Note:</strong> The <code>GeoHashEnvironment</code> uses the Geohash encoding to store point data. Objects are inserted into a tree and can be queried against a given spatial window query, such as k-NN or just a point query.</p>
+<h2 id="creating-an-environment">Creating an environment</h2>
+<p>Creating a <code>GeoHashEnvironment</code> can be done by specifying the geographic region to cover. For example, create a <code>GeoHashEnvironment</code> for the city centre of Hamburg, using the <code>BuildByBBox()</code> method. This method requires a bounding box.</p>
+<pre><code class="lang-csharp">var environment = GeoHashEnvironment&lt;Citizen&gt;.BuildByBBox(9.908253, 53.510570, 10.100194, 53.602103);
+</code></pre><p>In this example, a bounding box with lower-left bound (lon:9.908253,lat:53.510570) and upper-right bound (lon:10.100194,lat:53.602103) is specified. The agent type <code>Citizen</code> lives on this layer, as specified in the initialization signature. <strong>Note:</strong> To define a customized bounding box, please see <a href="#user-defined-bounding-boxes">here</a>.</p>
+<p><strong>Note:</strong> Alternatively, a <code>GeoHashEnvironment</code> can be initialized using geospatial data that is loaded into the simulation at runtime. Doing so changes the initialization routine of the layer type, as shown <a href="#importing-data-for-a-geohashenvironment">below</a>.</p>
+<p><strong>Note:</strong> Optionally, the precision of the environment can be specified using the parameter <code>cellSizeInM</code>. The smaller the cell size, the more precise the coordinate computation, but the slower the simulation execution.</p>
+<p>The choice of the cell size depends mainly on the size of a time step. For example, for a simulation with a temporal reference (i.e., the simulation&#39;s start time and end time are specified using real dates and/or times) with a time step equal to 1 second, a cell size of 1 meter (default when no argument was passed) is recommended. With an increased time step, e.g. 1 minute, the cell size should be proportionally larger to maintain the realism of individual movement of objects.</p>
+<h2 id="interaction-withwithin-the-grid-environment">Interaction with/within the Grid Environment</h2>
+<h3 id="add-an-agents-to-the-environment">Add an agents to the environment</h3>
+<p>To add an object (for example, an agent or entity) to a georeferenced environment, the <code>Insert</code> method of the <code>Environment</code> is used.</p>
+<pre><code class="lang-csharp">Position = Position.CreateGeoPosition(&lt;longitude&gt;, &lt;latitude&gt;);
+Environment.Insert(this);
+</code></pre><p>This example takes place in the initialization method of an agent <code>Citizen</code>. The agent has a property <code>Position</code>. This property is initialized with a geoposition that consists of a tuple <code>(&lt;longitude&gt;,&lt;latitude&gt;)</code>. These values can be imported from an agent initialization file (typically a CSV file; see documentation on <a href="https://mars.haw-hamburg.de/articles/core/basic-concepts/agent.html">Agents</a> for more details). Once the agent has a defined position, it can be placed on the <code>Environment</code> by calling the environment&#39;s <code>Insert(&lt;object reference&gt;)</code> method and passing a reference to the agent.</p>
+<h3 id="remove-an-existing-object">Remove an existing object</h3>
+<p>Removing an agent follows the same principle as adding it. The <code>Remove(&lt;object to remove&gt;)</code> method is executed via the <code>Environment</code> and the entity to be removed is specified.</p>
+<pre><code class="lang-csharp">Environment.Remove(this);
+</code></pre><p><strong>Note:</strong> Alternatively, an agent can be removed from the layer on which the agent lives by calling the <code>UnregisterAgent</code> method of the layer. This method, in turn, has a method <code>Invoke()</code>, which takes the layer from which the agent should be removed and a reference to the agent that should be removed.</p>
+<pre><code class="lang-csharp">Environment.UnregisterAgent.Invoke(Environment, this);
+</code></pre><h3 id="move-an-agent-to-another-location">Move an agent to another location</h3>
+<p>The <code>GeoHashEnvironment</code> enables agents to move on it. There are four movement methods, which are illustrated in the following examples.</p>
+<p>The first movement method is <code>MoveTo()</code>, which is called as shown below.</p>
+<pre><code class="lang-csharp">Environment.MoveTo(this, &lt;position tuple (longitude, latitude)&gt;);
+</code></pre><p>Upon execution of the above code, the <code>Environment</code> determines the shortest path between the agent&#39;s current position and the goal position specified in the method&#39;s second parameter.</p>
+<p><strong>Note:</strong> There are different options for the second parameter of <code>MoveTo()</code>. Alternatively to the tuple shown above, the method can take two individual double values &ndash; representing the longitude and latitude of the desired position, respectively &ndash; as the second and third parameter. Or an array of double values can be passed to represent a path which the agent should travel along.</p>
+<p>The second movement method is <code>MoveTowards()</code>, which has two signatures. This method can be called either with a <code>DirectionType</code> enum or with a bearing double. For more information on how to calculate a bearing, please see <a href="#how-to-calculate-bearing">here</a>.</p>
+<pre><code class="lang-csharp">Environment.MoveTowards(this, &lt;DirectionType&gt;);
+</code></pre><pre><code class="lang-csharp">Environment.MoveTowards(this, &lt;bearing&gt;);
+</code></pre><p>The <code>DirectionType</code> enum can be <code>Up</code>, <code>Down</code>, <code>UpRight</code>, <code>UpLeft</code>, etc. The bearing can be a double between 0.0 (equivalent to the direction type <code>Up</code>) and 360.0 and specifies the angle to which the agent should turn and move.</p>
+<p>The last movement method is <code>MoveToPosition()</code>. This method takes a reference to the object (agent or entity) that should be re-positioned and a latitude and longitude. It returns a position object, allowing the agent to be positioned at the respective position by overwriting its <code>Position</code> property. <strong>Note:</strong> this function allows agents to be &quot;teleported&quot; to any given position on the environment.</p>
+<pre><code class="lang-csharp">Environment.MoveToPosition(this, &lt;latitude&gt;, &lt;longitude&gt;);
+</code></pre><h2 id="explore-other-agents-and-resources">Explore other agents and resources</h2>
+<p>Agents can explore an environment to identify other agents and resources by calling the <code>Explore()</code> method on the environment. Below is an example.</p>
+<pre><code class="lang-csharp">IEnumerable&lt;Citizen&gt; result = Environment.Explore();
+</code></pre><p>This call explores the <code>Environment</code> for <code>Citizen</code> agents. Since no parameters are specified, the entire <code>Environment</code> is explored. <strong>Note: in simulations with many agents, this can be computationally costly.</strong></p>
+<p>Alternatively, the <code>Explore()</code> method can also be called with parameters. The signature is <code>Explore(&lt;position&gt;, &lt;search_radius&gt;, &lt;number_of_objects&gt;, &lt;filter_predicate&gt;)</code>:</p>
+<ul>
+<li><code>position</code> is the geospatial position (consisting of an <code>longitude</code> and <code>latitude</code>) from which the exploration should begin (e.g., the caller&#39;s current position).</li>
+<li><code>&lt;search_radius&gt;</code> is the extent of the exploration (e.g., an <code>Explore()</code> call with a search radius of <code>5</code> on a geohash environment explores the environment within five grid cells of the specified <code>&lt;position&gt;</code>).</li>
+<li><code>&lt;number_of_objects&gt;</code> is the maximum number of objects (i.e., <code>Citizen</code> agents, in case of the current example) that should be returned as a result of the exploration.</li>
+<li><code>&lt;filter_predicate&gt;</code> is an optional predicate (selection expression) that can be applied to the exploration goal (in this case <code>Citizen</code> agents) in case only those agents that satisfy a certain condition are required. Below is an example of a full <code>Explore()</code> call.</li>
+</ul>
+<pre><code class="lang-csharp">IEnumerable&lt;Citizen&gt; result = Environment.Explore(Position, 20, -1, agentInEnvironment =&gt; agentInEnvironment.HasBike);
+</code></pre><p>In this example, all <code>Citizen</code> agents within <code>20</code> steps that satisfy the <code>HasBike</code> condition are returned and stored in the <code>IEnumerable</code> collection. By specifying <code>-1</code> in the second parameter, the results are not limited by search radius.</p>
+<p>Furthermore, if you want to query the entire spatial space, you specify <code>-1D</code> for the <code>&lt;radius&gt;</code>.</p>
+<pre><code class="lang-csharp">IEnumerable&lt;Citizen&gt; result = Environment.Explore(Position, -1D, -1, agentInEnvironment =&gt; agentInEnvironment.HasBike);
+</code></pre><p>In this case, all registered <code>Citizen</code> agents in the environment are queried for the condition <code>HasBike</code>. However, the filter specified in the fourth parameter is still applied to potentially filter the results based on whether the agents satisfy the condition <code>HasBike</code>.</p>
+<p><strong>Note:</strong> Alternatively, a <code>Select()</code> and other LINQ queries can be formulated on the <code>IEnumerable&lt;Citizen&gt; result</code>, which will be evaluated after the query is executed.</p>
+<h2 id="importing-data-for-a-geohashenvironment">Importing data for a GeoHashEnvironment</h2>
+<p>The bounding box of a <code>GeoHashEnvironment</code> is defined based on a set of data that define the geospatial extent of the simulation environment of interest. For example, this can be an ASC file that covers the Hamburg metropolitan area. This file can be loaded into the simulation via the model&#39;s configuration file <em>config.json</em>:</p>
+<pre><code class="lang-json">Previous section...
+&quot;layers&quot;: [  
+  {  
+    &quot;name&quot;:&quot;MyGeoHashLayer&quot;,  
+    &quot;file&quot;: &quot;Resources/hamburg.asc&quot;
+  }
+]
+Next section...
+</code></pre><p>Since <code>MyGeoHashLayer</code> is loaded into the simulation from the configuration file, a property with the same name is required in the layer class. This requires an annotation <code>[PropertyDescription]</code> above the property name, indicating to the runtime system that external information is available to be written into the property at runtime. For more information on layer initialization and annotations, please click <a href="https://mars.haw-hamburg.de/articles/core/basic-concepts/layers.html">here</a>.</p>
+<p>Then, an environment can be initialized as follows (typically in the initialization method of the layer):</p>
+<pre><code class="lang-csharp">var extent = new Envelope(MyGeoHashLayer.Extent);
+var environment = GeoHashEnvironment&lt;Citizen&gt;.BuildByBBox(new BoundingBox(extent), &lt;cellSizeInM&gt;);
+</code></pre><p>By calling the property <code>Extent</code>, the geographic extent that is represented in the property <code>MyGeoHashLayer</code> is stored in a local variable <code>extent</code>. This information is then used to initialize a <code>GeoHashEnvironment</code> with a bounding box that is equivalent to the geographic extent stored in <code>extent</code>. Here, the parameter <code>cellSizeInM</code> is required and denotes the size of an individual cell of the <code>GeoHashEnvironment</code> in meters.</p>
+<p>For more information and an example of how to generate an abstract environment with a spatial extent that is made up of multiple layers, please see <a href="https://git.haw-hamburg.de/mars/model-deployments/-/blob/master/C%23%20Models/Geo_Test%20CS/Geo_Test%20CS/Model/LandscapeLayer.cs">here</a>.</p>
+<h2 id="exporting-data-for-a-geo-environment">Exporting data for a Geo Environment</h2>
+<p>The <code>GeoHashEnvironment</code> can be exported to a number of output formats. In the below example, CSV and JSON are illustrated.</p>
+<pre><code class="lang-csharp">File.WriteAllText(&quot;geoEnvironment.csv&quot;, environment.ToCsv());
+</code></pre><pre><code class="lang-csharp">File.WriteAllText(&quot;geoEnvironment.json&quot;, environment.ToJson());
+</code></pre><h2 id="special-cases">Special Cases</h2>
+<h3 id="how-to-calculate-a-bearing">How to Calculate a Bearing</h3>
+<p>The bearing (in degrees) between two geographic coordinates is the angle between them relative to the <code>UP</code> position. The <code>UP</code> position points north and its bearing is equal to 0.0. From there, the size the angle increases in the clockwise direction.</p>
+<p>The following two methods can be used to calculate a bearing between two positions. The first method takes the two positions directly, whereas the second method takes the individual coordinates of each position (as doubles).</p>
+<pre><code class="lang-csharp">var bearing = GetBearing(this Position pt1, in Position pt2)
+</code></pre><pre><code class="lang-csharp">var bearing = GetBearing(double x1, double y1, double x2, double y2)
+</code></pre></article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Documentation/articles/core/basic-concepts/environments/geohashenv.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>Copyright &copy MARS GROUP.<br><strong>HAW Hamburg</strong></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

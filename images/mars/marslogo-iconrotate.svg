@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="7.8400002"
+   inkscape:export-xdpi="7.8400002"
+   inkscape:export-filename="d:\Users\Jan\Pictures\gif\mars-icon-2.png"
+   sodipodi:docname="marslogo-icon.svg"
+   inkscape:version="0.48.4 r9939"
+   version="1.1"
+   id="svg2"
+   height="1000"
+   width="1000">
+  <defs
+     id="defs4">
+    <inkscape:path-effect
+       effect="construct_grid"
+       id="path-effect3068"
+       is_visible="true"
+       nr_x="5"
+       nr_y="5" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="479.51995"
+     inkscape:cy="424.29386"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     showborder="true"
+     inkscape:showpageshadow="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     borderlayer="false"
+     inkscape:snap-page="false">
+    <sodipodi:guide
+       orientation="0,1"
+       position="13,367.661"
+       id="guide3010" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="1000000,368"
+       id="guide3012" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="368.775,758"
+       id="guide3014" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Außenring"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-52.36218)"
+     style="display:inline">
+    <path
+       style="fill:#cc861d;fill-opacity:1;stroke:none;display:inline"
+       d="M 357.0415,864.3262 C 285.9404,860.079 222.7652,813.1663 198.1346,746.3249 c -12.3304,-33.4616 -14.2465,-73.448 -5.138,-107.223 14.2293,-52.763 51.2529,-96.2507 100.9838,-118.6147 23.8504,-10.7256 46.4995,-15.5531 73.6865,-15.7058 28.9727,-0.1626 49.6856,4.1542 76.3189,15.9057 48.7789,21.523 87.521,67.2253 100.688,118.7769 7.4939,29.3402 7.4181,63.0726 -0.2047,91.07 -20.5291,75.401 -86.6958,129.2033 -164.5831,133.8279 -6.1361,0.3644 -16.4162,0.3483 -22.8445,-0.036 l 0,0 z"
+       id="path3012-9-8"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g3016"
+       transform="matrix(0.93969262,0.34202015,-0.34202015,0.93969262,255.88705,-84.623844)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3029"
+         d="m 368,324.3622 c -71.2766,0 -137.7593,20.3801 -193.842,55.575 1.9602,2.311 3.8,4.7125 5.4904,7.2225 54.5489,-34.0741 119.1221,-53.7975 188.3516,-53.7975 195.4674,0 353.925,157.148 353.925,351 0,193.8519 -158.4576,351 -353.925,351 -195.4674,0 -353.925,-157.1481 -353.925,-351 0,-68.9607 20.0613,-133.2663 54.6996,-187.515 -2.5231,-1.6743 -4.9627,-3.4761 -7.2827,-5.4225 C 25.7284,547.1905 5,613.3774 5,684.3622 c 0,198.8225 162.5206,360 363,360 200.4794,0 363,-161.1775 363,-360 0,-198.8225 -162.5206,-360 -363,-360 z"
+         style="fill:#cc861d;fill-opacity:1;display:inline" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3012-9"
+         d="M 109.2058,504.2426 C 80.7601,502.543 55.4853,483.77 45.6312,457.0221 c -4.9331,-13.3902 -5.6997,-29.3916 -2.0556,-42.9073 5.6928,-21.1141 20.505,-38.5165 40.4011,-47.4659 9.5419,-4.292 18.6033,-6.2239 29.4801,-6.285 11.5912,-0.065 19.878,1.6624 30.5333,6.365 19.5152,8.6129 35.0149,26.9015 40.2827,47.5308 2.9981,11.7411 2.9678,25.2397 -0.082,36.4434 -8.2132,30.1732 -34.6848,51.7032 -65.8455,53.5538 -2.455,0.1458 -6.5678,0.1394 -9.1396,-0.014 l 0,0 z"
+         style="fill:#cc861d;fill-opacity:1;stroke:none;display:inline" />
+    </g>
+    <g
+       id="g3000"
+       transform="matrix(0.76604444,0.64278762,-0.64278762,0.76604444,525.1714,-77.314778)"
+       inkscape:export-filename="d:\Users\Jan\Pictures\gif\mars-icon-1.png"
+       inkscape:export-xdpi="7.8400002"
+       inkscape:export-ydpi="7.8400002"
+       inkscape:transform-center-x="-16.164262"
+       inkscape:transform-center-y="0.014301872">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3029-0"
+         d="m 368.8168,412.7872 c -150.3596,0 -272.25,120.8831 -272.25,270 0,149.1169 121.8904,270 272.25,270 150.3595,0 272.25,-120.8831 272.25,-270 0,-50.036 -13.7201,-96.8922 -37.6386,-137.07 -1.6513,1.598 -3.4282,3.0693 -5.3089,4.3875 22.9696,38.9591 36.1412,84.295 36.1412,132.6825 0,145.3889 -118.8432,263.25 -265.4437,263.25 -146.6006,0 -265.4438,-117.8611 -265.4438,-263.25 0,-145.389 118.8432,-263.25 265.4438,-263.25 66.469,0 127.2421,24.2214 173.8089,64.26 1.6412,-1.5902 3.4036,-3.044 5.2862,-4.365 -47.8699,-41.5014 -110.5179,-66.645 -179.0951,-66.645 z"
+         style="fill:#cc861d;fill-opacity:1;display:inline" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3012-9-4"
+         d="m 573.0282,548.9115 c -14.2229,-0.8498 -26.8603,-10.2363 -31.7874,-23.6102 -2.4665,-6.6951 -2.8498,-14.6958 -1.0278,-21.4537 2.8464,-10.557 10.2525,-19.2582 20.2006,-23.7329 4.771,-2.146 9.3016,-3.1119 14.74,-3.1425 5.7957,-0.033 9.939,0.8312 15.2667,3.1825 9.7576,4.3064 17.5075,13.4507 20.1414,23.7654 1.499,5.8705 1.4839,12.6198 -0.041,18.2217 -4.1066,15.0866 -17.3425,25.8516 -32.9228,26.7769 -1.2275,0.073 -3.2839,0.07 -4.5698,-0.01 l 0,0 z"
+         style="fill:#cc861d;fill-opacity:1;stroke:none;display:inline" />
+    </g>
+  </g>
+  <g
+     transform="translate(0,-52.36218)"
+     inkscape:groupmode="layer"
+     id="g3914"
+     inkscape:label="1. Ring"
+     style="display:inline" />
+  <g
+     style="display:inline"
+     inkscape:label="2. Ring"
+     id="g3192"
+     inkscape:groupmode="layer"
+     transform="translate(0,-52.36218)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Text"
+     transform="translate(0,-52.36218)"
+     style="display:none">
+    <flowRoot
+       transform="translate(114.86329,-50.676158)"
+       xml:space="preserve"
+       id="flowRoot3098"
+       style="font-size:225px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Roboto Light;-inkscape-font-specification:Roboto Light"><flowRegion
+         id="flowRegion3100"><rect
+           id="rect3102"
+           width="621.875"
+           height="265.625"
+           x="106.25"
+           y="482.04968"
+           style="font-size:225px;font-family:Roboto Light;-inkscape-font-specification:Roboto Light"
+           ry="0" /></flowRegion><flowPara
+         id="flowPara3104"
+         style="font-size:225px;font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;fill:#ff7f2a;font-family:Roboto Th;-inkscape-font-specification:Roboto Th">MARS</flowPara></flowRoot>  </g>
+</svg>

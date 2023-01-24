@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000"
+   height="1000"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="Mars Logo v7.svg"
+   inkscape:export-filename="Z:\Clipboard\Mars Logo.png"
+   inkscape:export-xdpi="299.97"
+   inkscape:export-ydpi="299.97">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="741.24214"
+     inkscape:cy="438.52476"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showborder="true"
+     inkscape:showpageshadow="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     borderlayer="false">
+    <sodipodi:guide
+       orientation="1,0"
+       position="500,1025"
+       id="guide3196" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="500,500"
+       id="guide3198" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Außenring"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-52.362183)"
+     style="display:inline">
+    <path
+       style="fill:#ff7f2a"
+       d="M 500 0 C 401.82284 0 310.24887 28.305753 233 77.1875 C 235.69997 80.397314 238.23416 83.732637 240.5625 87.21875 C 315.69875 39.893662 404.64259 12.5 500 12.5 C 769.23882 12.5 987.5 230.76119 987.5 500 C 987.5 769.23881 769.23882 987.5 500 987.5 C 230.76118 987.5 12.5 769.23881 12.5 500 C 12.5 404.22122 40.132623 314.90789 87.84375 239.5625 C 84.368415 237.23708 81.008092 234.73457 77.8125 232.03125 C 28.551563 309.48384 0 401.41008 0 500 C 0 776.14238 223.85763 1000 500 1000 C 776.14237 1000 1000 776.14238 1000 500 C 1000 223.85762 776.14237 0 500 0 z "
+       transform="translate(0,52.362183)"
+       id="path3029" />
+    <path
+       style="fill:#ff7f2a;display:inline"
+       d="M 501.125 122.8125 C 294.01823 122.8125 126.125 290.70573 126.125 497.8125 C 126.125 704.91927 294.01823 872.8125 501.125 872.8125 C 708.23175 872.8125 876.125 704.91927 876.125 497.8125 C 876.125 428.31803 857.22692 363.24003 824.28125 307.4375 C 822.00675 309.65691 819.55918 311.70042 816.96875 313.53125 C 848.60729 367.64119 866.75 430.60765 866.75 497.8125 C 866.75 699.74159 703.0541 863.4375 501.125 863.4375 C 299.1959 863.4375 135.5 699.74159 135.5 497.8125 C 135.5 295.8834 299.1959 132.1875 501.125 132.1875 C 592.68017 132.1875 676.38966 165.82839 740.53125 221.4375 C 742.79184 219.22895 745.21939 217.20973 747.8125 215.375 C 681.87598 157.73416 595.58401 122.8125 501.125 122.8125 z "
+       transform="translate(0,52.362183)"
+       id="path3029-0" />
+    <path
+       style="fill:#ff7f2a;stroke:none"
+       d="M 485.45602,789.38157 C 390.822,783.73199 306.73714,721.32904 273.95429,632.41716 257.54279,587.9068 254.99253,534.71718 267.1158,489.78989 c 18.93884,-70.18494 68.2165,-128.03191 134.40721,-157.7804 31.74438,-14.26708 61.88986,-20.68857 98.07514,-20.89166 38.56203,-0.21642 66.13047,5.52575 101.57882,21.15764 64.92355,28.62976 116.48847,89.42257 134.01354,157.99613 9.97423,39.02804 9.87333,83.89863 -0.27241,121.14066 -27.32385,100.29785 -115.3902,171.8652 -219.05649,178.01685 -8.16708,0.48463 -21.8496,0.46325 -30.40559,-0.0475 l 0,-2e-5 z"
+       id="path3012"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ff7f2a;stroke:none;display:inline"
+       d="m 143.53421,302.19609 c -39.18149,-2.36054 -73.995302,-28.43418 -87.568442,-65.58395 -6.79489,-18.59762 -7.85078,-40.82168 -2.83136,-59.59351 7.84129,-29.32515 28.24381,-53.49518 55.648862,-65.9249 13.14318,-5.96116 25.62438,-8.64423 40.60624,-8.72909 15.96591,-0.0904 27.38012,2.30881 42.05687,8.84023 26.88042,11.96228 48.22994,37.36315 55.48588,66.01503 4.12964,16.30697 4.08787,35.05511 -0.11279,50.61583 -11.31295,41.90714 -47.77523,71.8099 -90.69637,74.38023 -3.38143,0.20249 -9.04643,0.19356 -12.58889,-0.0199 l 0,-10e-6 z"
+       id="path3012-9"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ff7f2a;stroke:none;display:inline"
+       d="m 782.40794,364.23629 c -19.59075,-1.18028 -36.99766,-14.21709 -43.78423,-32.79198 -3.39745,-9.29881 -3.92539,-20.41084 -1.41568,-29.79676 3.92064,-14.66257 14.1219,-26.74758 27.82444,-32.96244 6.57159,-2.98059 12.81218,-4.32212 20.30311,-4.36455 7.98296,-0.0452 13.69006,1.1544 21.02844,4.42011 13.44021,5.98114 24.11497,18.68158 27.74294,33.00752 2.06482,8.15348 2.04393,17.52755 -0.0564,25.30791 -5.65647,20.95357 -23.88761,35.90496 -45.34818,37.19012 -1.69072,0.10124 -4.52322,0.0968 -6.29444,-0.01 l 0,-10e-6 z"
+       id="path3012-9-4"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     transform="translate(0,-52.362183)"
+     inkscape:groupmode="layer"
+     id="g3914"
+     inkscape:label="1. Ring"
+     style="display:inline" />
+  <g
+     style="display:inline"
+     inkscape:label="2. Ring"
+     id="g3192"
+     inkscape:groupmode="layer"
+     transform="translate(0,-52.362183)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Text"
+     transform="translate(0,-52.362183)"
+     style="display:none">
+    <flowRoot
+       transform="translate(114.86329,-50.676158)"
+       xml:space="preserve"
+       id="flowRoot3098"
+       style="font-size:225px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Roboto Light;-inkscape-font-specification:Roboto Light"><flowRegion
+         id="flowRegion3100"><rect
+           id="rect3102"
+           width="621.875"
+           height="265.625"
+           x="106.25"
+           y="482.04968"
+           style="font-size:225px;font-family:Roboto Light;-inkscape-font-specification:Roboto Light"
+           ry="0" /></flowRegion><flowPara
+         id="flowPara3104"
+         style="font-size:225px;font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;fill:#ff7f2a;font-family:Roboto Th;-inkscape-font-specification:Roboto Th">MARS</flowPara></flowRoot>  </g>
+</svg>

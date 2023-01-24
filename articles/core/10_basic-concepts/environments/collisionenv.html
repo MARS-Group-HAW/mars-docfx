@@ -1,0 +1,479 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Collision Environment | MARS LIFE Runtime System </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Collision Environment | MARS LIFE Runtime System ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../../../../images/mars/mars-icon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+  
+  <meta property="docfx:rel" content="../../../../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../images/mars/mars-icon-resized.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../../../../articles/about_mars.html" title="Documentation">Documentation</a>
+                      </li>
+                      <li>
+                          <a href="../../../../simulation/Mars.Core.html" title="Core API">Core API</a>
+                      </li>
+                      <li>
+                          <a href="../../../../soh/SOHBicycleModel.Common.html" title="SmartOpenHamburg API">SmartOpenHamburg API</a>
+                      </li>
+                      <li>
+                          <a href="../../../../components/Mars.Components.html" title="Model Components API">Model Components API</a>
+                      </li>
+                      <li>
+                          <a href="../../../../common/Mars.Common.html" title="Common API">Common API</a>
+                      </li>
+                </ul>            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="../../../dsl/index.html" title="MARS DSL Language" class="">MARS DSL Language</a>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../../core/index.html" title="MARS Runtime System" class="">MARS Runtime System</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../../core/00_getting-started/index.html" title="Getting started with MARS" class="">Getting started with MARS</a>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../core/10_basic-concepts/index.html" title="Basic Concepts" class="">Basic Concepts</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../core/10_basic-concepts/00_multi-agent-simulation.html" title="Multi-Agent-Simulation" class="">Multi-Agent-Simulation</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/10_basic-concepts/10_agent.html" title="Agents" class="">Agents</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/10_basic-concepts/20_layers.html" title="Layers" class="">Layers</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/10_basic-concepts/30_entity.html" title="Entities" class="">Entities</a>
+                                </li>
+                                <li class="">
+                                  <span class="expand-stub"></span>
+                                  <a href="../../../core/10_basic-concepts/environments/index.html" title="Environments" class="">Environments</a>
+
+                                    <ul class="nav level4">
+                                      <li class="">
+                                        <a href="../../../core/10_basic-concepts/environments/spatialhashenv.html" title="SpatialHashEnvironment" class="">SpatialHashEnvironment</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="../../../core/10_basic-concepts/environments/geohashenv.html" title="GeoHashEnvironment" class="">GeoHashEnvironment</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="../../../core/10_basic-concepts/environments/spatialgraphenv.html" title="SpatialGraphEnvironment" class="">SpatialGraphEnvironment</a>
+                                      </li>
+                                      <li class="active">
+                                        <a href="../../../core/10_basic-concepts/environments/collisionenv.html" title="CollisionEnvironment" class="active">CollisionEnvironment</a>
+                                      </li>
+                                    </ul>                                </li>
+                                <li class="">
+                                  <a href="../../../core/10_basic-concepts/model.html" title="Model Setup" class="">Model Setup</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../core/model-configuration/index.md" title="Model Configuration" class="">Model Configuration</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../core/model-configuration/agent_config.md" title="Agent and Entity Configuration" class="">Agent and Entity Configuration</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/model-configuration/layer_config.md" title="Layer Configuration" class="">Layer Configuration</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/model-configuration/output_filter.md" title="Output Filter" class="">Output Filter</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/model-configuration/sim_config_options.md" title="Simulation Configuration Options" class="">Simulation Configuration Options</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/model-configuration/sim_output_formats.md" title="Simulation Output Formats" class="">Simulation Output Formats</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../core/data-sources/index.md" title="Data Sources" class="">Data Sources</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../core/data-sources/geospatial_data_sources.md" title="Geospatial Data Sources" class="">Geospatial Data Sources</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/data-sources/geospatial_data_types.md" title="Geospatial Data Types" class="">Geospatial Data Types</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/data-sources/ascii-grid.md" title="ASCII grid (.asc)" class="">ASCII grid (.asc)</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/data-sources/csv.md" title="CSV" class="">CSV</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/data-sources/time-series.md" title="Time-series Data" class="">Time-series Data</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../core/analysis-and-visualization/index.md" title="Analysis and Visualization" class="">Analysis and Visualization</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../core/analysis-and-visualization/visualizing_agent_trips_kepler.md" title="Visualizing Agent Movement Trajectories" class="">Visualizing Agent Movement Trajectories</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/analysis-and-visualization/live_visualization.md" title="Simple Live Visualization" class="">Simple Live Visualization</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/analysis-and-visualization/visualizing_sim_results.md" title="Analyzing Output Data" class="">Analyzing Output Data</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../core/tutorials/index.html" title="Tutorials" class="">Tutorials</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../core/tutorials/create_new_mars_csharp_project.html" title="Creating a new MARS C# project" class="">Creating a new MARS C# project</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/tutorials/main_and_configs.html" title="Creating a starting point for your model" class="">Creating a starting point for your model</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/tutorials/create_vector_layer_raster_layer.html" title="Creating vector and raster layer files" class="">Creating vector and raster layer files</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/tutorials/wolf_sheep_tutorial.html" title="Building your first model (wolf-sheep-grass)" class="">Building your first model (wolf-sheep-grass)</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/help/index.md" title="Common problems and solutions" class="">Common problems and solutions</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/tutorials/geo-data-acquisition.html" title="Acquire geo data for layers" class="">Acquire geo data for layers</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../core/tutorials/deploy_in_cloud.html" title="Build and start your model in Kubernetes cluster" class="">Build and start your model in Kubernetes cluster</a>
+                                </li>
+                              </ul>                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="../../../soh/index.html" title="SmartOpenHamburg" class="">SmartOpenHamburg</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../../../soh/getting-started.html" title="Quick Start" class="">Quick Start</a>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../soh/scenarios/index.html" title="Ready to use scenarios (boxes)" class="">Ready to use scenarios (boxes)</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../soh/scenarios/ferry_transfer.html" title="Ferry Transfer" class="">Ferry Transfer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/scenarios/green_4_bikes.html" title="Green4Bikes" class="">Green4Bikes</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/scenarios/ferry_transfer_green4bikes_results.html" title="Results" class="">Results</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/scenarios/ferry_transfer_green4bikes_result_scheme.html" title="Result Schemas" class="">Result Schemas</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../soh/index.html" title="Layer" class="">Layer</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../soh/layers/multi_modal_layer.html" title="Multimodal Layer" class="">Multimodal Layer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/layers/modal_layer.html" title="Modal Layer" class="">Modal Layer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/layers/scheduling_layer.html" title="Scheduling Layer" class="">Scheduling Layer</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/layers/vector_layer.html" title="Vector Layer" class="">Vector Layer</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../soh/index.html" title="Agents" class="">Agents</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../soh/agents.html" title="Behaviour Model" class="">Behaviour Model</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/agents/multi_modal_agent.html" title="Multimodal" class="">Multimodal</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/agents/multi_capable_agent.html" title="Multi-Capable" class="">Multi-Capable</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/steering.html" title="Multi-Modality" class="">Multi-Modality</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/agents/citizen.html" title="Citizen" class="">Citizen</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/agents/traveler.html" title="Traveler" class="">Traveler</a>
+                                </li>
+                              </ul>                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="../../../soh/index.html" title="Entities" class="">Entities</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="../../../soh/entities.html" title="Referencing" class="">Referencing</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/entities/car.html" title="Street Vehicles" class="">Street Vehicles</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/entities/bicycle.html" title="Bicycle Vehicles" class="">Bicycle Vehicles</a>
+                                </li>
+                                <li class="">
+                                  <a href="../../../soh/entities/ferry.html" title="Ferry" class="">Ferry</a>
+                                </li>
+                              </ul>                          </li>
+                        </ul>                    </li>
+                  </ul>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="collision-environment">Collision Environment</h1>
+
+<p>A <code>CollisionEnvironment</code> is a game environment that manages characters and obstacles. A character is an agent that participates in the game that is played in the environment (for more information on <code>Character</code>, click <a href="#character">here</a>). An obstacle is a physical object with a given geometric shape that is positioned in the environment (for more information on <code>Obstacle</code>, click <a href="#obstacle">here</a>). The environment can handle different collision types, each described by a <code>CollisionKind</code> (for more information on <code>CollisionKind</code>, click <a href="#character">here</a>). A simple example showing a few functionalities can be found <a href="https://git.haw-hamburg.de/mars/model-deployments/-/tree/master/C%23%20Models/Collision_Test%20CS">here</a>.</p>
+<p><strong>Note:</strong> While a <code>CollisionEnvironment</code> does not feature agents and entities, it has characters and obstacles. A character corresponds to an agent, and an obstacle corresponds to an entity. Characters can interact with obstacles, similar to how agents can interact with entities.</p>
+<h2 id="creating-an-environment">Creating an environment</h2>
+<p>A <code>CollisionEnvironment</code> does not have a layer in the usual sense. The spatial extent of a <code>CollisionEnvironment</code> can be specified explicitly via a bounding box. If no bounding box is defined, the spatial extent is defined dynamically based on the positions of the obstacles.</p>
+<p>Initialization occurs as shown in the following code snippet.</p>
+<pre><code class="lang-csharp">var environment = new CollisionEnvironment&lt;Player, Obstacle&gt;();
+</code></pre><p>If an explicit spatial extent is desired, it can be specified via a bounding box as follows:</p>
+<pre><code class="lang-csharp">environment.BoundingBox = new BoundingBox(new Position(0, 0), new Position(9, 9));
+</code></pre><p>Here, the character type <code>Player</code> implements <code>IPlayer</code> and the obstacle type <code>Obstacle</code> implements <code>IObstacle</code>.</p>
+<p>It is possible to load geometries to create a desired playground within <code>environment</code>. The following two code snippets provide examples for generating geometries: a line string and a polygon.</p>
+<pre><code class="lang-csharp">var lineString = new LineString(new[] {
+  new Coordinate(5,5), 
+  new Coordinate(8,8) 
+});
+</code></pre><pre><code class="lang-csharp">var polygon = new Polygon(new LinearRing(new[]  
+{  
+  new Coordinate(1,1),  
+  new Coordinate(2,3),  
+  new Coordinate(3,3),  
+  new Coordinate(1,1)  
+}));
+</code></pre><center>
+  <figure>
+    <img src="../../../../images/docu/environment_with_two_obstacles.png" alt="environment_with_two_obstacles" width="40%">
+    <figcaption>Fig.1: Illustration of a possible <tt>CollisionEnvironment</tt> with a bounding box spanning the coordinates between <tt>(0,0)</tt> and <tt>(9,9)</tt>. The environment holds the obstacles generated in the two above code snippets. The red line represents <tt>lineString</tt> and the blue triangle represents <tt>polygon</tt>.</figcaption>
+  </figure>
+</center>
+
+<p>The two generated geometries can be inserted into the environment as follows.</p>
+<pre><code class="lang-csharp">environment.Insert(new Obstacle(), polygon);  
+environment.Insert(new Obstacle(), lineString);
+</code></pre><p>The <code>environment</code> consists of a graph (made up of nodes and edges) that holds inserted obstacles at their specified positions. A node is a <code>RoutingPoint</code> and an edge is a <code>Route</code>. A set of routing points can be arranged evenly (as shown in Fig.1) with a slight offset (as shown in Fig.2) in a grid structure.</p>
+<p>TODO: Einstellungsparameter für Environment-Initialisierung finden und hier dokumentieren.</p>
+<center>
+  <figure>
+    <img src="../../../../images/docu/environment_full.png" alt="environment_full" width="65%">
+    <figcaption>Fig.2: Illustration of a possible <tt>CollisionEnvironment</tt> with a spatial extent that was generated dynamically based on the positioning of the obstacles. The routing points that have a slight offset. The edges represent possible paths through the environment. The purple boxes represent obstacles.</figcaption>
+  </figure>
+</center>
+
+<p>The offset can be introduced as follows. Here, a total of <code>225</code> routing points are distributed homogeneously across the <code>environment</code> with an offset per routing point of <code>0.05</code>. The resulting distribution of routing points can look like the set of routing points shown in Fig.2.</p>
+<pre><code class="lang-csharp">environment.RoutingPointsGenerator =
+    new HomogenousRoutingPointsGenerator(225, 0.05);
+</code></pre><p>Alternatively to the homogeneous distributions shown in Fig.1 and Fig.2, a set of routing points that are distributed heterogeneously in space can be defined as follows. Here, a previously defined bounding box is divided into <code>20</code> sections and <code>5</code> routing points per section.</p>
+<pre><code class="lang-csharp">environment.RoutingPointsGenerator =
+    new SectionalRandomRoutingPointsGenerator(20, 5);
+</code></pre><p><strong>Note:</strong> In all cases, the modeller is responsible for the correct positioning of characters within the <code>environment</code>. Therefore, it is advisable to position obstacles first (thereby generating the spatial extent of the environment) and then positioning characters such that they are situated within that spatial extent.</p>
+<h2 id="interaction-withwithin-the-collisionenvironment">Interaction with/within the <code>CollisionEnvironment</code></h2>
+<h3 id="add-a-character-to-the-environment">Add a character to the environment</h3>
+<p>To add a <code>Player</code> to the <code>environment</code>, the <code>Insert()</code> method of the <code>Environment</code> is used.</p>
+<pre><code class="lang-csharp">Position = RandomPosition();
+Environment.Insert(this);
+</code></pre><p>This example takes place in the initialization method of an character <code>Player</code>. The character has a property <code>Position</code>. This property is initialized with a random position that consists of a tuple (x,y). Once the character has a defined position, it can be placed on the <code>Environment</code> by calling the environment&#39;s <code>Insert(&lt;object reference&gt;)</code> method and passing a reference to the character.</p>
+<h3 id="remove-an-existing-object">Remove an existing object</h3>
+<p>Removing a character follows the same principle as adding it. The <code>Remove(&lt;object to remove&gt;)</code> method is executed via the <code>Environment</code> and the entity to be removed is specified.</p>
+<pre><code class="lang-csharp">Environment.Remove(&lt;object to remove&gt;);
+</code></pre><h3 id="move-an-agent-to-another-location">Move an agent to another location</h3>
+<p>A <code>Player</code> can call the <code>Move(...)</code> method of a <code>CollisionEnvironment</code> to move through the environment, as shown in the following code snippet.</p>
+<pre><code class="lang-csharp">Environment.Move(this, &lt;bearing&gt;, &lt;distance&gt;)
+</code></pre><ul>
+<li><code>&lt;bearing&gt;</code> is a double between 0.0 and 360.0 that specifies the direction in which the <code>Player</code> wants to move. Here, 0.0 means a direction that points north. The direction of a value that is larger than 0.0 is determined by turning in a clock-wise direction from the north-facing direction.</li>
+<li><code>&lt;distance&gt;</code> is a double that defines the number of units that the <code>Player</code> wants to move in the direction specified by <code>&lt;bearing&gt;</code>.</li>
+</ul>
+<p><strong>Note:</strong> The actual movement trajectory of a <code>Player</code> depends on the properties of the <code>Obstacle</code> objects (e.g., <code>CollisionKind</code>) that the <code>Player</code> might encounter on the desired path trajectory specified by <code>&lt;bearing&gt;</code> and <code>&lt;distance&gt;</code>. For more information on obstacles, please see (for more information on <code>CollisionKind</code>, click <a href="#character">here</a>).</p>
+<p>In addition to movement via the <code>Move(...)</code> method, a route between two <code>RoutingPoints</code> can be specified via the <code>FindRoute(...)</code> method as follows. </p>
+<pre><code class="lang-csharp">var route = environment.FindRoute(character, goal).ToList();
+</code></pre><p>This call returns a route, which is a list of <code>Position</code> objects. The route specifies a path through the environment from the current position of <code>character</code> to <code>goal</code>.</p>
+<h2 id="explore-other-characters-and-obstacles">Explore other characters and obstacles</h2>
+<p>A <code>Player</code> can explore other characters and obstacles in the environment as shown in the following two code snippets.</p>
+<pre><code class="lang-csharp">var exploredCharacters = environment.ExploreCharacters(&lt;source&gt;, &lt;geometry&gt;, &lt;predicate&gt;)
+</code></pre><pre><code class="lang-csharp">var exploredObstacles = environment.ExploreObstacles(&lt;geometry&gt;, &lt;predicate&gt;)
+</code></pre><ul>
+<li><code>ExploreCharacters(...)</code> returns a list of characters, where <code>&lt;source&gt;</code> is the requesting character, <code>&lt;geometry&gt;</code> is the spatial area of exploration, and <code>&lt;predicate&gt;</code> is an optional filter criterion that can be set to filter the returned collection. </li>
+<li><code>ExploreCharacters(...)</code> returns a list of obstacles, where <code>&lt;geometry&gt;</code> is the spatial area of exploration and <code>&lt;predicate&gt;</code> is an optional filter criterion that can be set to filter the returned collection. </li>
+</ul>
+<h2 id="exporting-data-for-a-grid-environment">Exporting data for a Grid Environment</h2>
+<p>TODO</p>
+<h2 id="character">Character</h2>
+<p>A <code>Character</code> is an active participant of the game that is played in a <code>CollisionEnvironment</code>. It is described by the following properties:</p>
+<ul>
+<li><code>ID</code>: A <code>Guid</code> that uniquely identifies a <code>Character</code></li>
+<li><code>Position</code>: The current position, described by a tuple (x,y), of a <code>Character</code></li>
+<li><code>Extent</code>: The spatial extent of a <code>Character</code></li>
+</ul>
+<p>Furthermore, the following method is inherent to every <code>Character</code>:</p>
+<ul>
+<li><code>HandleCollision(ICharacter other)</code>: This method is called by a <code>Character</code> upon collision with <code>ICharacter</code> (a collision between two characters). It returns a <code>CollisionKind</code> that represents the action that the <code>Character</code> should take as a result of the collision.</li>
+</ul>
+<p>A <code>CollisionKind</code> can be one of three actions:</p>
+<ul>
+<li><code>Block</code>: A <code>Character</code> blocks <code>other</code>, i.e., acts like a obstacle for that <code>Character</code></li>
+<li><code>Pass</code>: A <code>Character</code> moves through <code>other</code>, i.e., continues along its original movement trajectory</li>
+<li><code>Remove</code>: A <code>Character</code> is removed from the environment due to the collision</li>
+</ul>
+<h2 id="obstacle">Obstacle</h2>
+<ul>
+<li><code>IsRoutable(ICharacter)</code>: returns a boolean that states whether <code>ICharacter</code> is a blocking object or can be passed</li>
+<li><code>HandleCollision(ICharacter)</code>: This method is called by an <code>Obstacle</code> when <code>ICharacter</code> collides with it. It returns a <code>CollisionKind</code> that represents the role that the <code>Obstacle</code> should play in the context of the movement behavior of <code>ICharacter</code>.</li>
+<li><code>HandleExploration(ICharacter)</code>: This method handles the visibility check for the <code>Obstacle</code> by returning the <code>VisibilityKind</code> of the <code>Obstacle</code></li>
+</ul>
+<p>A <code>VisibilityKind</code> describes whether an <code>Obstacle</code> is <code>Transparent</code> or <code>Opaque</code> with respect to the vision of a <code>Character</code>:</p>
+<ul>
+<li><code>Transparent</code>: A <code>Character</code> can see through the <code>Obstacle</code></li>
+<li><code>Opaque</code>: A <code>Character</code> cannot see through the <code>Obstacle</code></li>
+</ul>
+<h2 id="special-cases">Special Cases</h2>
+<p>TODO</p>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Documentation/articles/core/10_basic-concepts/environments/collisionenv.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>Copyright &copy MARS GROUP.<br><strong>HAW Hamburg</strong></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>
