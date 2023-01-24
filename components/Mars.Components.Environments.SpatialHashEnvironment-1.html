@@ -1459,8 +1459,10 @@ releasing, or resetting unmanaged resources.
   <a id="Mars_Components_Environments_SpatialHashEnvironment_1_Explore_" data-uid="Mars.Components.Environments.SpatialHashEnvironment`1.Explore*"></a>
   <h4 id="Mars_Components_Environments_SpatialHashEnvironment_1_Explore_Mars_Interfaces_Environments_Position_System_Double_System_Int32_System_Func__0_System_Boolean__" data-uid="Mars.Components.Environments.SpatialHashEnvironment`1.Explore(Mars.Interfaces.Environments.Position,System.Double,System.Int32,System.Func{`0,System.Boolean})">Explore(Position, Double, Int32, Func&lt;TEntity, Boolean&gt;)</h4>
   <div class="markdown level1 summary">
-Queries the a set of nearest entities around the <code>position</code> with with optional specified radius
-and count for the positioning system of the <a class="xref" href="Mars.Interfaces.Environments.IEnvironment.html">IEnvironment</a>.
+Represents the spatial hash environment for a grid-based
+index with exploration, movement and lookup.
+This class provides all base functionality with provided
+properties and the initialization of the index.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1480,22 +1482,22 @@ and count for the positioning system of the <a class="xref" href="Mars.Interface
       <tr>
         <td><a class="xref" href="Mars.Interfaces.Environments.Position.html">Position</a></td>
         <td><span class="parametername">position</span></td>
-        <td>The <a class="xref" href="Mars.Interfaces.Environments.Position.html">Position</a> from which the exploration shall be started.</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">radius</span></td>
-        <td>The range of the exploration circle.</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">count</span></td>
-        <td>The amount of entities to find.</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">predicate</span></td>
-        <td>A predicate to select only specific entities based on a condition.</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1510,7 +1512,7 @@ and count for the positioning system of the <a class="xref" href="Mars.Interface
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TEntity&gt;</td>
-        <td>An distance based order from the nearest entity to tha farthest <see cref="!:TEntity"></see></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1598,8 +1600,10 @@ to filter out entities matching a specific condition.
   <a id="Mars_Components_Environments_SpatialHashEnvironment_1_Explore_" data-uid="Mars.Components.Environments.SpatialHashEnvironment`1.Explore*"></a>
   <h4 id="Mars_Components_Environments_SpatialHashEnvironment_1_Explore_System_Double___System_Double_System_Int32_System_Func__0_System_Boolean__" data-uid="Mars.Components.Environments.SpatialHashEnvironment`1.Explore(System.Double[],System.Double,System.Int32,System.Func{`0,System.Boolean})">Explore(Double[], Double, Int32, Func&lt;TEntity, Boolean&gt;)</h4>
   <div class="markdown level1 summary">
-Queries the a set of nearest entities around the <see cref="!:position"></see> with
-with optional specified radius and count
+Represents the spatial hash environment for a grid-based
+index with exploration, movement and lookup.
+This class provides all base functionality with provided
+properties and the initialization of the index.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1619,22 +1623,22 @@ with optional specified radius and count
       <tr>
         <td><span class="xref">System.Double</span>[]</td>
         <td><span class="parametername">position</span></td>
-        <td>The discrete position from which the exploration shall be calculated</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">radius</span></td>
-        <td>The radius of exploration range</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">count</span></td>
-        <td>The amount of entities to find</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">predicate</span></td>
-        <td>A predicate to filter specific entities</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1649,7 +1653,7 @@ with optional specified radius and count
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TEntity&gt;</td>
-        <td>An distance based order from the nearest entity to tha farthest</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

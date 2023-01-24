@@ -1346,7 +1346,7 @@ the +/- 3 standard deviation interval are returned.
   <a id="Mars_Numerics_Statistics_FastGaussianDistributionF_Next_" data-uid="Mars.Numerics.Statistics.FastGaussianDistributionF.Next*"></a>
   <h4 id="Mars_Numerics_Statistics_FastGaussianDistributionF_Next_Mars_Common_Core_Random_FastRandom_" data-uid="Mars.Numerics.Statistics.FastGaussianDistributionF.Next(Mars.Common.Core.Random.FastRandom)">Next(FastRandom)</h4>
   <div class="markdown level1 summary">
-Gets a new random value for the underlying probability distribution.
+Creates random values using an approximate Gaussian distribution (single-precision).
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1366,9 +1366,7 @@ Gets a new random value for the underlying probability distribution.
       <tr>
         <td><span class="xref">Mars.Common.Core.Random.FastRandom</span></td>
         <td><span class="parametername">random</span></td>
-        <td>
-The random number generator. (Must not be <span class="xref">null</span>.)
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1383,7 +1381,7 @@ The random number generator. (Must not be <span class="xref">null</span>.)
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td>A random value.</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1411,23 +1409,6 @@ the +/- 3 standard deviation interval are returned.
     the created random values do not exceed 3 standard deviations.
 </p>
 </div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td>
-<code data-dev-comment-type="paramref" class="paramref">random</code> is <span class="xref">null</span>.
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Mars.Common.IO.Serializer.html#Mars_Common_IO_Serializer_Save__1___0_System_Byte____Mars_Common_IO_SerializerCompression_">Serializer.Save&lt;T&gt;(T, out Byte[], SerializerCompression)</a>

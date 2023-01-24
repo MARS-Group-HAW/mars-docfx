@@ -330,7 +330,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="vector-layer">Vector Layer</h1>
 
-<p>The SmartOpenHamburg model implements a number of vector-layers (more about vector-layers and how to define them can be found <a href="../../../core/basic-concepts/layers.md">here</a>).</p>
+<p>The SmartOpenHamburg model implements a number of vector-layers (more about vector-layers and how to define them can be found <a href="../../core/basic-concepts/layers.html">here</a>).</p>
 <p>Vector layers are used in the model to map environmental information of the city. This environmental information includes the following types:</p>
 <ul>
 <li>Point Layer<ul>
@@ -377,7 +377,7 @@ VectorLayer &lt;|-- VectorLanduseLayer
 }
 VectorLayer &lt;|-- VectorBuildingsLayer
 </code></pre><p>A <code>VectorBuildingsLayer</code> can be used similar to the <code>VectorLanduseLayer</code> to search for nearby service locations. The following figure shows the integrated buildings footprint of Hamburg, highlightinng the universities (red):</p>
-<p><img src="../../images/modeling/buildings.png" alt="LandUse"></p>
+<p><img src="../../../images/modeling/buildings.png" alt="LandUse"></p>
 <p>The following code searches for a supermarket to fulfill <code>Errands</code>:</p>
 <pre><code class="lang-c#">var nearestShops = VectorLanduseLayer.Explore(new []{9.941650, 53.587268}, 100, 1, buildings =&gt; land.Type == &quot;supermarket&quot;);
 </code></pre><h2 id="modality-networks">Modality Networks</h2>

@@ -1267,7 +1267,8 @@ the same chance to be chosen.
   <a id="Mars_Numerics_Statistics_UniformDistributionD_Next_" data-uid="Mars.Numerics.Statistics.UniformDistributionD.Next*"></a>
   <h4 id="Mars_Numerics_Statistics_UniformDistributionD_Next_Mars_Common_Core_Random_FastRandom_" data-uid="Mars.Numerics.Statistics.UniformDistributionD.Next(Mars.Common.Core.Random.FastRandom)">Next(FastRandom)</h4>
   <div class="markdown level1 summary">
-Gets a new random value for the underlying probability distribution.
+Represents a uniform distribution that returns random values for a given interval
+[<a class="xref" href="Mars.Numerics.Statistics.UniformDistributionD.html#Mars_Numerics_Statistics_UniformDistributionD_MinValue">MinValue</a>, <a class="xref" href="Mars.Numerics.Statistics.UniformDistributionD.html#Mars_Numerics_Statistics_UniformDistributionD_MaxValue">MaxValue</a>] (double-precision).
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1287,9 +1288,7 @@ Gets a new random value for the underlying probability distribution.
       <tr>
         <td><span class="xref">Mars.Common.Core.Random.FastRandom</span></td>
         <td><span class="parametername">random</span></td>
-        <td>
-The random number generator. (Must not be <span class="xref">null</span>.)
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1304,7 +1303,7 @@ The random number generator. (Must not be <span class="xref">null</span>.)
     <tbody>
       <tr>
         <td><span class="xref">System.Double</span></td>
-        <td>A random value.</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1316,23 +1315,6 @@ Every time <a class="xref" href="Mars.Numerics.Statistics.UniformDistributionD.h
 [<a class="xref" href="Mars.Numerics.Statistics.UniformDistributionD.html#Mars_Numerics_Statistics_UniformDistributionD_MinValue">MinValue</a>, <a class="xref" href="Mars.Numerics.Statistics.UniformDistributionD.html#Mars_Numerics_Statistics_UniformDistributionD_MaxValue">MaxValue</a>] is returned. All values in this interval have
 the same chance to be chosen.
 </div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td>
-<code data-dev-comment-type="paramref" class="paramref">random</code> is <span class="xref">null</span>.
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Mars.Common.IO.Serializer.html#Mars_Common_IO_Serializer_Save__1___0_System_Byte____Mars_Common_IO_SerializerCompression_">Serializer.Save&lt;T&gt;(T, out Byte[], SerializerCompression)</a>

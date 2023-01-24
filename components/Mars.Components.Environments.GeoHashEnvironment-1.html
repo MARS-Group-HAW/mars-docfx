@@ -1968,8 +1968,10 @@ minimal costs. Note that his method does not guarantee to reach the destination.
   <a id="Mars_Components_Environments_GeoHashEnvironment_1_MoveTo_" data-uid="Mars.Components.Environments.GeoHashEnvironment`1.MoveTo*"></a>
   <h4 id="Mars_Components_Environments_GeoHashEnvironment_1_MoveTo__0_System_Double_System_Double_System_Double_System_Func_System_Double___System_Boolean__" data-uid="Mars.Components.Environments.GeoHashEnvironment`1.MoveTo(`0,System.Double,System.Double,System.Double,System.Func{System.Double[],System.Boolean})">MoveTo(T, Double, Double, Double, Func&lt;Double[], Boolean&gt;)</h4>
   <div class="markdown level1 summary">
-Moves an <code>entity</code> to the destination along an optimal ray path with
-minimal costs. Note that his method does not guarantee to reach the destination.
+This class provides a geo-based environment with CRS projected to EPSG:4326 (WGS:84).
+The environment provides a spatial index in which insert, remove, move (update) and query (read)
+operations are provided, used on conjunction with concrete entity type <see cref="!:T"></see>
+implementing <a class="xref" href="Mars.Interfaces.Environments.IPositionable.html">IPositionable</a>.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1994,12 +1996,12 @@ minimal costs. Note that his method does not guarantee to reach the destination.
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">x</span></td>
-        <td>The x coordinate of the destination.</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">y</span></td>
-        <td>The y coordinate of the destination.</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
@@ -2009,7 +2011,7 @@ minimal costs. Note that his method does not guarantee to reach the destination.
       <tr>
         <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Double</span>[], <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">predicate</span></td>
-        <td>The predicate along the movement which need to be valid or null</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -2024,7 +2026,7 @@ minimal costs. Note that his method does not guarantee to reach the destination.
     <tbody>
       <tr>
         <td><a class="xref" href="Mars.Interfaces.Environments.Position.html">Position</a></td>
-        <td>Returns the new position of the <code>entity</code>> or null if no positioning happened.</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -2126,17 +2128,17 @@ implementing <a class="xref" href="Mars.Interfaces.Environments.IPositionable.ht
       <tr>
         <td><span class="xref">T</span></td>
         <td><span class="parametername">objectToMove</span></td>
-        <td>the object to move</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">latitudeDestination</span></td>
-        <td>Latitude of destination</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">longitudeDestination</span></td>
-        <td>Longitude of destination</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -2151,7 +2153,7 @@ implementing <a class="xref" href="Mars.Interfaces.Environments.IPositionable.ht
     <tbody>
       <tr>
         <td><a class="xref" href="Mars.Interfaces.Environments.Position.html">Position</a></td>
-        <td>The new position to set in the agent.</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -2286,7 +2288,10 @@ Moves an <code>entity</code> the travelling distance <code>distanceToPass</code>
   <a id="Mars_Components_Environments_GeoHashEnvironment_1_PosAt_" data-uid="Mars.Components.Environments.GeoHashEnvironment`1.PosAt*"></a>
   <h4 id="Mars_Components_Environments_GeoHashEnvironment_1_PosAt__0_System_Double_System_Double_" data-uid="Mars.Components.Environments.GeoHashEnvironment`1.PosAt(`0,System.Double,System.Double)">PosAt(T, Double, Double)</h4>
   <div class="markdown level1 summary">
-Moves an <code>entity</code> to the desired destination.
+This class provides a geo-based environment with CRS projected to EPSG:4326 (WGS:84).
+The environment provides a spatial index in which insert, remove, move (update) and query (read)
+operations are provided, used on conjunction with concrete entity type <see cref="!:T"></see>
+implementing <a class="xref" href="Mars.Interfaces.Environments.IPositionable.html">IPositionable</a>.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -2331,7 +2336,7 @@ Moves an <code>entity</code> to the desired destination.
     <tbody>
       <tr>
         <td><a class="xref" href="Mars.Interfaces.Environments.Position.html">Position</a></td>
-        <td>Returns the new position of the <code>entity</code>> or null if no positioning happened.</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -2345,7 +2350,10 @@ Moves an <code>entity</code> to the desired destination.
   <a id="Mars_Components_Environments_GeoHashEnvironment_1_PosAt_" data-uid="Mars.Components.Environments.GeoHashEnvironment`1.PosAt*"></a>
   <h4 id="Mars_Components_Environments_GeoHashEnvironment_1_PosAt__0_System_Double___" data-uid="Mars.Components.Environments.GeoHashEnvironment`1.PosAt(`0,System.Double[])">PosAt(T, Double[])</h4>
   <div class="markdown level1 summary">
-Set the <code>entity</code> exactly at the desired position without any movement actions.
+This class provides a geo-based environment with CRS projected to EPSG:4326 (WGS:84).
+The environment provides a spatial index in which insert, remove, move (update) and query (read)
+operations are provided, used on conjunction with concrete entity type <see cref="!:T"></see>
+implementing <a class="xref" href="Mars.Interfaces.Environments.IPositionable.html">IPositionable</a>.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -2370,7 +2378,7 @@ Set the <code>entity</code> exactly at the desired position without any movement
       <tr>
         <td><span class="xref">System.Double</span>[]</td>
         <td><span class="parametername">position</span></td>
-        <td>The coordinates of the position to position to</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -2385,7 +2393,7 @@ Set the <code>entity</code> exactly at the desired position without any movement
     <tbody>
       <tr>
         <td><a class="xref" href="Mars.Interfaces.Environments.Position.html">Position</a></td>
-        <td>Returns the new position of the <code>entity</code>> or null if no positioning happened.</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
